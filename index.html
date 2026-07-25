@@ -1,10 +1,18 @@
+
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dr. Ruchika Gupta | Vedic Astrology & Spiritual Guidance</title>
+    <meta name="description" content="Consult Dr. Ruchika Gupta, one of the leading Vedic astrologers in India. Rising Astrology offers horoscope analysis, Kundli matching, career guidance, marriage consultation, Vastu, Tarot Reading, Numerology, Palmistry, Reiki Healing, and spiritual remedies.">
+    <meta name="keywords" content="Dr Ruchika Gupta, Ruchika Gupta, Rising Astrology, Rising Astrology India, Best Astrologer in India, Best Astrologer in Uttar Pradesh, Famous Astrologer, Online Astrology Consultation, Vedic Astrology, Horoscope Reading, Kundli Matching, Kundali Analysis, Tarot Reading, Numerology, Vastu Consultant, Palmistry, Reiki Healing, Marriage Astrology, Career Astrology, Love Astrology, Spiritual Guidance">
+    <meta property="og:title" content="Dr. Ruchika Gupta | Rising Astrology">
+<meta property="og:description" content="Trusted Vedic Astrologer with 23+ years of experience. Online Kundli, Horoscope, Tarot, Numerology, Vastu & Reiki Consultation.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://yourdomain.com/">
+    <title>Dr. Ruchika Gupta | Best Astrologer in India | Rising Astrology | Vedic Astrology Expert</title>
     
+    <link rel="canonical" href="https://risingastrology.com/">
     <!-- Premium Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,11 +25,11 @@
             theme: {
                 extend: {
                     fontFamily: {
-    sans: ['Inter', 'sans-serif'],
-    serif: ['"Playfair Display"', 'serif'],
-    poppins: ['Poppins', 'sans-serif'],
-    courgette: ['Courgette', 'cursive'],
-},
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['"Playfair Display"', 'serif'],
+                        poppins: ['Poppins', 'sans-serif'],
+                        courgette: ['Courgette', 'cursive'],
+                    },
                     colors: {
                         brand: {
                             cosmic: '#0B1235',
@@ -56,31 +64,29 @@
     <script src="https://unpkg.com/lucide@latest"></script>
 
     <style>
+        /* Snell Roundhand */
+        @font-face{
+            font-family:'SnellRoundhand';
+            src:url('fonts/snellroundhand_bold.otf') format('opentype');
+            font-weight:700;
+            font-style:italic;
+        }
 
-    	/* Snell Roundhand */
+        .logo-title{
+            font-family:'SnellRoundhand', cursive;
+            font-style:italic;
+            font-weight:700;
+            color:#D9A441;
+            font-size:4rem;
+            line-height:1;
+        }
 
-@font-face{
-    font-family:'SnellRoundhand';
-    src:url('fonts/snellroundhand_bold.otf') format('opentype');
-    font-weight:700;
-    font-style:italic;
-}
-
-.logo-title{
-    font-family:'SnellRoundhand', cursive;
-    font-style:italic;
-    font-weight:700;
-    color:#D9A441;
-    font-size:4rem;
-    line-height:1;
-}
-
-.logo-subtitle{
-    font-family:'Alice', serif;
-    font-style:italic;
-    color:#D9A441;
-    font-size:1rem;
-}
+        .logo-subtitle{
+            font-family:'Alice', serif;
+            font-style:italic;
+            color:#D9A441;
+            font-size:1rem;
+        }
 
         body {
             background-color: #F6F3FB;
@@ -101,6 +107,2112 @@
             background: linear-gradient(135deg, #6F35E9 0%, #8B46FF 100%);
             color: white;
             box-shadow: 0 10px 25px -5px rgba(139, 70, 255, 0.35);
+            transition: all 0.3s ease;
+            border: none;
+        }
+        .btn-primary:hover {
+            box-shadow: 0 15px 35px -5px rgba(139, 70, 255, 0.5);
+            transform: translateY(-2px);
+        }
+        
+        .bg-hero { background: linear-gradient(135deg, #090F2C 0%, #140F38 50%, #24114A 100%); }
+        .bg-contact { background: linear-gradient(135deg, #16113A 0%, #0D153B 100%); }
+        .bg-testi { background: linear-gradient(180deg, #110F2F 0%, #0B1235 100%); }
+        .bg-kundli { background: linear-gradient(135deg, #5F2FD1 0%, #7B3FF2 60%, #8B46FF 100%); }
+
+        /* Service Cards Gradient Overlay */
+        .service-gradient {
+            background: linear-gradient(to top, rgba(10, 8, 28, 0.96) 0%, rgba(18, 12, 44, 0.72) 45%, rgba(20, 15, 58, 0.12) 100%);
+        }
+
+        /* Hide scrollbar */
+        .scrollbar-hide::-webkit-scrollbar {
+            display: none;
+        }
+        .scrollbar-hide {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        
+        /* Modal & View Animations */
+        .modal-active { display: flex; animation: fadeIn 0.3s ease-out forwards; }
+        .modal-inactive { display: none; }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes scaleUp {
+            from { transform: scale(0.95); opacity: 0; }
+            to { transform: scale(1); opacity: 1; }
+        }
+        .modal-content-active { animation: scaleUp 0.3s ease-out forwards; }
+        
+        /* Floating Badges Animation */
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-8px); }
+            100% { transform: translateY(0px); }
+        }
+        .float-1 { animation: float 4s ease-in-out infinite; }
+        .float-2 { animation: float 5s ease-in-out infinite 1s; }
+        .float-3 { animation: float 4.5s ease-in-out infinite 2s; }
+
+        /* Carousel dragging styles */
+        .cursor-grab { cursor: grab; }
+        .cursor-grabbing { cursor: grabbing !important; }
+
+        /* Timeline Connector */
+        .timeline-line {
+            position: absolute;
+            left: 20px;
+            top: 20px;
+            bottom: 20px;
+            width: 2px;
+            background: rgba(123, 63, 242, 0.2);
+            z-index: 0;
+        }
+        @media (min-width: 768px) {
+            .timeline-line {
+                left: 0;
+                right: 0;
+                top: 24px;
+                bottom: auto;
+                width: 100%;
+                height: 2px;
+            }
+        }
+    </style>
+</head>
+<body class="antialiased font-sans relative">
+
+    <!-- 1. HEADER / NAVIGATION -->
+    <header id="header" class="fixed w-full z-50 transition-all duration-300 py-4 bg-[rgba(16,12,44,0.85)] backdrop-blur-md border-b border-white/10 shadow-sm">
+        <div class="container mx-auto px-4 md:px-6 flex justify-between items-center">
+            
+            <!-- Logo -->
+            <a href="#home" onclick="navigateTo('view-home'); window.scrollTo(0,0); return false;" class="flex items-center gap-3 sm:gap-4 cursor-pointer z-10 transition-transform hover:scale-105">
+                <img src="https://democratic-chocolate-yo9i6u8j.edgeone.app/Abstract%20logo%20for%20website%20developers_20260703_152336_0000.png" alt="Rising Astrology Logo" class="h-16 sm:h-20 md:h-24 w-auto object-contain drop-shadow-[0_2px_10px_rgba(255,255,255,0.15)]" />
+                <div class="flex flex-col justify-center mt-1">
+                    <h1 class="logo-title text-3xl sm:text-4xl md:text-5xl lg:text-6xl mb-1">
+                        Rising Astrology
+                    </h1>
+                    <span class="logo-subtitle text-sm sm:text-base md:text-lg">
+                        By Dr. Ruchika Gupta
+                    </span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav -->
+            <nav class="hidden lg:flex items-center space-x-7 xl:space-x-8 z-10">
+                <a href="#home" onclick="navigateTo('view-home'); window.scrollTo(0,0); return false;" class="nav-link text-sm font-medium text-brand-textLight hover:text-brand-gold transition-colors">Home</a>
+                <a href="#about" onclick="navigateToHomeAndScroll('about'); return false;" class="nav-link text-sm font-medium text-brand-textLight hover:text-brand-gold transition-colors">About</a>
+                <a href="#services" onclick="navigateToHomeAndScroll('services'); return false;" class="nav-link text-sm font-medium text-brand-textLight hover:text-brand-gold transition-colors">Services</a>
+                <a href="#packages" onclick="navigateTo('view-packages'); window.scrollTo(0,0); return false;" class="nav-link text-sm font-medium text-brand-textLight hover:text-brand-gold transition-colors">Packages</a>
+                <a href="#kundli" onclick="navigateToHomeAndScroll('kundli'); return false;" class="nav-link text-sm font-medium text-brand-textLight hover:text-brand-gold transition-colors">Kundli</a>
+                <a href="#products" onclick="navigateToHomeAndScroll('products'); return false;" class="nav-link text-sm font-medium text-brand-textLight hover:text-brand-gold transition-colors">Products</a>
+                <a href="#gallery" onclick="navigateToHomeAndScroll('gallery'); return false;" class="nav-link text-sm font-medium text-brand-textLight hover:text-brand-gold transition-colors">Gallery</a>
+                <a href="#testimonials" onclick="navigateToHomeAndScroll('testimonials'); return false;" class="nav-link text-sm font-medium text-brand-textLight hover:text-brand-gold transition-colors">Testimonials</a>
+            </nav>
+
+            <!-- Desktop Actions -->
+            <div class="hidden lg:flex items-center space-x-4 z-10">
+                <a href="#packages" onclick="navigateTo('view-packages'); window.scrollTo(0,0); return false;" class="nav-link btn-primary px-6 py-2.5 text-sm font-semibold rounded-xl cursor-pointer">
+                    Book Consultation
+                </a>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button id="mobile-menu-btn" class="lg:hidden text-white hover:text-brand-gold transition-colors p-2 z-10">
+                <i data-lucide="menu" id="menu-icon" class="w-7 h-7"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Nav Dropdown -->
+        <div id="mobile-menu" class="hidden absolute top-full left-0 w-full bg-brand-cosmic border-t border-white/10 shadow-xl flex-col p-4 space-y-2">
+            <a href="#home" onclick="navigateTo('view-home'); window.scrollTo(0,0); return false;" class="nav-link mobile-link text-left py-3 px-4 rounded-lg text-brand-textLight hover:bg-brand-purple/20 font-medium">Home</a>
+            <a href="#about" onclick="navigateToHomeAndScroll('about'); return false;" class="nav-link mobile-link text-left py-3 px-4 rounded-lg text-brand-textLight hover:bg-brand-purple/20 font-medium">About</a>
+            <a href="#services" onclick="navigateToHomeAndScroll('services'); return false;" class="nav-link mobile-link text-left py-3 px-4 rounded-lg text-brand-textLight hover:bg-brand-purple/20 font-medium">Services</a>
+            <a href="#packages" onclick="navigateTo('view-packages'); window.scrollTo(0,0); return false;" class="nav-link mobile-link text-left py-3 px-4 rounded-lg text-brand-textLight hover:bg-brand-purple/20 font-medium">Packages</a>
+            <a href="#kundli" onclick="navigateToHomeAndScroll('kundli'); return false;" class="nav-link mobile-link text-left py-3 px-4 rounded-lg text-brand-textLight hover:bg-brand-purple/20 font-medium">Kundli</a>
+            <a href="#products" onclick="navigateToHomeAndScroll('products'); return false;" class="nav-link mobile-link text-left py-3 px-4 rounded-lg text-brand-textLight hover:bg-brand-purple/20 font-medium">Products</a>
+            <a href="#gallery" onclick="navigateToHomeAndScroll('gallery'); return false;" class="nav-link mobile-link text-left py-3 px-4 rounded-lg text-brand-textLight hover:bg-brand-purple/20 font-medium">Gallery</a>
+            <a href="#testimonials" onclick="navigateToHomeAndScroll('testimonials'); return false;" class="nav-link mobile-link text-left py-3 px-4 rounded-lg text-brand-textLight hover:bg-brand-purple/20 font-medium">Testimonials</a>
+            <a href="#contact" onclick="navigateToHomeAndScroll('contact'); return false;" class="nav-link mobile-link text-left py-3 px-4 rounded-lg text-brand-gold hover:bg-brand-purple/20 font-medium border-t border-white/10 mt-2 pt-4">Contact</a>
+        </div>
+    </header>
+
+    <!-- VIEW: HOME (Main Landing Page) -->
+    <main id="view-home" class="block animate-[fadeIn_0.5s_ease-out]">
+        
+        <!-- 2. HERO SECTION -->
+        <section id="home" class="pt-28 pb-16 md:pt-36 md:pb-24 px-4 w-full bg-hero relative overflow-hidden">
+            <!-- Celestial Glow Accents -->
+            <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(123,63,242,0.15)_0%,transparent_60%)] pointer-events-none"></div>
+
+            <div class="container mx-auto max-w-6xl grid grid-cols-1 lg:grid-cols-2 gap-y-10 lg:gap-y-6 lg:gap-x-12 items-center text-center lg:text-left relative z-10">
+                
+                <!-- Text Content -->
+                <div class="order-1 lg:col-start-1 lg:row-start-1 lg:self-end flex flex-col items-center lg:items-start">
+                    <h1 class="text-4xl md:text-6xl lg:text-[4rem] font-serif font-bold text-white leading-tight mb-4 lg:mb-6">
+                        Expert Vedic Astrology <br/> <span class="text-brand-gold">Consultation</span>
+                    </h1>
+                    <p class="text-base md:text-lg text-brand-textLightSoft max-w-2xl lg:max-w-lg mx-auto lg:mx-0">
+                        Get personalized insights on career, marriage, health, and finances from a trusted and experienced astrologer.
+                    </p>
+                </div>
+
+                <!-- Hero Image (Square) without badges -->
+                <div class="order-2 lg:col-start-2 lg:row-start-1 lg:row-span-2 relative w-[90%] sm:w-full max-w-md lg:max-w-lg mx-auto lg:ml-auto lg:mr-0 z-10">
+                    <!-- Clipped Image Container -->
+                    <div class="rounded-[2rem] overflow-hidden shadow-glow border border-white/20 bg-white/5 backdrop-blur-sm p-2">
+                        <img src="https://raspy-bronze-j86vijdt.edgeone.app/file_00000000f7e871fa89838d1d5173300b.png" alt="Dr. Ruchika Gupta" class="w-full h-auto object-cover aspect-square object-top block rounded-[1.5rem]" />
+                    </div>
+                </div>
+
+                <!-- CTA Buttons -->
+                <div class="order-3 lg:col-start-1 lg:row-start-2 lg:self-start flex flex-col sm:flex-row w-full sm:w-auto gap-4 justify-center lg:justify-start">
+                    <a href="#packages" onclick="navigateTo('view-packages'); window.scrollTo(0,0); return false;" class="btn-primary w-full sm:w-64 py-3.5 rounded-xl font-semibold text-lg flex items-center justify-center gap-2 cursor-pointer">
+                        <i data-lucide="calendar" class="w-5 h-5"></i> Book Consultation
+                    </a>
+                    <a href="https://wa.me/919958031356?text=Hi%20Dr.%20Ruchika,%20I%20want%20to%20book%20a%20consultation." target="_blank" class="w-full sm:w-64 py-3.5 rounded-xl bg-transparent border border-brand-purpleSoft text-brand-textLight hover:bg-brand-purple/20 transition-all flex items-center justify-center gap-2 shadow-sm font-semibold text-lg">
+                        <i data-lucide="message-circle" class="w-5 h-5"></i> WhatsApp
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 3. ABOUT SECTION -->
+        <section id="about" class="py-16 md:py-24 bg-brand-light relative overflow-hidden">
+            <div class="container mx-auto px-4 max-w-6xl">
+                <div class="grid md:grid-cols-2 gap-12 lg:gap-20 items-center">
+                    
+                    <!-- About Image with Interactive Floating Badges -->
+                    <div class="relative rounded-[2rem] overflow-hidden max-w-md mx-auto md:mx-0 z-10">
+                        <div class="rounded-[2rem] overflow-hidden shadow-card group">
+                            <img src="https://annual-coral-c4bz3q5a.edgeone.app/IMG-20260622-WA0013.jpg" alt="Dr. Ruchika Gupta Astrologer" class="w-full h-auto object-cover aspect-square group-hover:scale-105 transition-transform duration-700" />
+                        </div>
+                        
+                        <!-- Floating Badge 1: 23+ Years Exp -->
+                        <div onclick="openBadgeModal('23+ Years Experience', 'Acharyaa Ruchika Gupta is a trusted astrologer with 23+ years of experience in Vedic Astrology, Vastu, Tarot, Numerology, Palmistry, Reiki, Feng Shui, Muhurat Calculations, and more. Trained through reputed institutions including Bhartiya Vidya Bhawan, Delhi and Bhartiya Vedic Jyotish Sansthan, Varanasi, she is known for her accurate guidance and holistic consultations.')" class="absolute top-6 -left-4 sm:-left-8 bg-white/95 backdrop-blur-md px-3 sm:px-4 py-2 sm:py-2.5 rounded-xl flex items-center gap-2 text-xs sm:text-sm font-bold shadow-soft border border-brand-purple/15 float-1 text-brand-textDark z-20 cursor-pointer hover:scale-105 hover:border-brand-purple transition-all">
+                            <div class="bg-brand-purple/10 p-1.5 rounded-full text-brand-purple"><i data-lucide="award" class="w-4 h-4"></i></div>
+                            23+ Years Exp.
+                        </div>
+
+                        <!-- Floating Badge 2: Detailed Analysis -->
+                        <div onclick="openBadgeModal('Detailed Analysis', 'A complete and personalised astrological reading that helps you understand the deeper patterns influencing your life. Gain clarity on relationships, career, finances, family, health, and important life decisions with meaningful insights and practical guidance.')" class="absolute top-[45%] -right-4 sm:-right-8 bg-white/95 backdrop-blur-md px-3 sm:px-4 py-2 sm:py-2.5 rounded-xl flex items-center gap-2 text-xs sm:text-sm font-bold shadow-soft border border-brand-purple/15 float-2 text-brand-textDark z-20 cursor-pointer hover:scale-105 hover:border-brand-purple transition-all">
+                            <div class="bg-brand-purple/10 p-1.5 rounded-full text-brand-gold"><i data-lucide="search" class="w-4 h-4"></i></div>
+                            Detailed Analysis
+                        </div>
+
+                        <!-- Floating Badge 3: Effective Remedies -->
+                        <div onclick="openBadgeModal('Effective Remedies', 'Receive thoughtfully suggested astrological remedies tailored to your concerns and planetary influences. These remedies are designed to support positive change, reduce obstacles, and bring greater balance, clarity, and harmony into different areas of life.')" class="absolute bottom-8 -left-4 sm:-left-8 bg-white/95 backdrop-blur-md px-3 sm:px-4 py-2 sm:py-2.5 rounded-xl flex items-center gap-2 text-xs sm:text-sm font-bold shadow-soft border border-brand-purple/15 float-3 text-brand-textDark z-20 cursor-pointer hover:scale-105 hover:border-brand-purple transition-all">
+                            <div class="bg-brand-purple/10 p-1.5 rounded-full text-brand-purple"><i data-lucide="sparkles" class="w-4 h-4"></i></div>
+                            Effective Remedies
+                        </div>
+                    </div>
+                    
+                    <!-- Text Content -->
+                    <div class="space-y-6">
+                        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white border border-brand-purple/20 text-brand-purple font-semibold text-sm shadow-sm">
+                            <i data-lucide="user" class="w-4 h-4"></i> Meet The Astrologer
+                        </div>
+                        
+                        <h2 class="text-3xl md:text-5xl font-serif font-bold text-brand-textDark leading-tight">
+                            Dr. Ruchika Gupta
+                        </h2>
+                        
+                        <p class="text-brand-textDarkSoft text-lg leading-relaxed">
+                            With over <strong class="text-brand-textDark font-semibold">23 years of profound experience</strong> in mystical sciences, Dr. Ruchika Gupta is a trusted Spiritual Consultant and Vedic Astrologer. Her life's mission is to bring light, clarity, and balance into your journey through holistic and practical guidance.
+                        </p>
+                        
+                        <!-- Expertise Grid -->
+                        <div class="grid grid-cols-2 sm:grid-cols-2 gap-y-4 gap-x-2 py-4">
+                            <div class="flex items-center gap-2 text-brand-textDark font-medium text-sm md:text-base w-fit">
+                                <i data-lucide="check-circle-2" class="w-5 h-5 text-brand-purpleSoft"></i> Vedic Astrology
+                            </div>
+                            <div class="flex items-center gap-2 text-brand-textDark font-medium text-sm md:text-base w-fit">
+                                <i data-lucide="check-circle-2" class="w-5 h-5 text-brand-purpleSoft"></i> Tarot Reading
+                            </div>
+                            <div class="flex items-center gap-2 text-brand-textDark font-medium text-sm md:text-base w-fit">
+                                <i data-lucide="check-circle-2" class="w-5 h-5 text-brand-purpleSoft"></i> Vastu Shastra
+                            </div>
+                            <div class="flex items-center gap-2 text-brand-textDark font-medium text-sm md:text-base w-fit">
+                                <i data-lucide="check-circle-2" class="w-5 h-5 text-brand-purpleSoft"></i> Numerology
+                            </div>
+                            <div class="flex items-center gap-2 text-brand-textDark font-medium text-sm md:text-base w-fit">
+                                <i data-lucide="check-circle-2" class="w-5 h-5 text-brand-purpleSoft"></i> Palmistry
+                            </div>
+                            <div class="flex items-center gap-2 text-brand-textDark font-medium text-sm md:text-base w-fit">
+                                <i data-lucide="check-circle-2" class="w-5 h-5 text-brand-purpleSoft"></i> Life Coaching
+                            </div>
+                        </div>
+
+                        <!-- UPDATED BUTTONS ROW -->
+                        <div class="flex flex-row w-full gap-2 sm:gap-4 mt-6">
+                            <a href="https://wa.me/919958031356?text=Hi%20Dr.%20Ruchika,%20I%20want%20to%20know%20more%20about%20your%20consultation." target="_blank" class="w-1/2 btn-primary flex flex-col md:flex-row items-center justify-center gap-1 md:gap-2 p-3 sm:px-6 sm:py-3.5 rounded-xl font-bold text-[13px] sm:text-base text-center transition-all hover:-translate-y-1">
+                                Talk to Dr. Ruchika Gupta
+                            </a>
+                            <button onclick="navigateTo('view-about'); window.scrollTo(0,0);" class="w-1/2 btn-primary flex flex-col md:flex-row items-center justify-center gap-1 md:gap-2 p-3 sm:px-6 sm:py-3.5 rounded-xl font-bold text-[13px] sm:text-base text-center transition-all hover:-translate-y-1">
+                                Learn More <i data-lucide="arrow-right" class="w-4 h-4 hidden md:block"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. SERVICES SECTION -->
+        <section id="services" class="py-16 bg-brand-cardSoft border-y border-brand-purple/10">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-12">
+                    <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white border border-brand-purple/20 text-brand-purple font-semibold text-sm mb-4 shadow-sm">
+                        <i data-lucide="sparkles" class="w-4 h-4"></i> Our Services
+                    </div>
+                    <h2 class="text-3xl md:text-4xl font-serif font-bold text-brand-textDark mb-4">
+                        Consultation <span class="text-brand-purple">Services</span>
+                    </h2>
+                    <p class="text-brand-textDarkSoft max-w-2xl mx-auto">
+                        Get personalized guidance from Dr. Ruchika Gupta through detailed analysis, telephonic consultations, and spiritual healing.
+                    </p>
+                </div>
+                
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+                    
+                    <!-- Service 1: Astrology -->
+                    <div id="svc-astrology" class="relative rounded-2xl overflow-hidden shadow-card group h-[26rem] flex flex-col justify-end scroll-mt-28">
+                        <img src="https://cdn.pixabay.com/photo/2017/07/23/22/36/starry-sky-2533021_1280.jpg" alt="Astrology" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                        <div class="absolute inset-0 service-gradient"></div>
+                        <div class="relative z-10 p-6 w-full">
+                            <h3 class="text-2xl font-bold text-white mb-2 font-serif">Astrology</h3>
+                            <p class="text-brand-textLightSoft text-sm mb-5 line-clamp-2">Complete birth chart analysis, career guidance, marriage insights, and planetary remedies for a balanced life.</p>
+                            <div class="flex gap-3">
+                                <a href="https://wa.me/919958031356?text=Hey%20Dr.%20Ruchika%20Gupta%2C%20I%20visited%20on%20your%20website%2C%20I%20am%20interested%20in%20Astrology." target="_blank" class="flex-1 btn-primary text-center py-2.5 rounded-lg text-sm font-semibold shadow-sm flex items-center justify-center">Interested</a>
+                                <button onclick="openServiceModal('Astrology', 'Complete birth chart analysis, career guidance, marriage insights, and planetary remedies for a balanced life. Discover the blueprint of your life journey.')" class="flex-1 bg-white/10 backdrop-blur-md border border-white/20 text-white text-center py-2.5 rounded-lg text-sm font-semibold hover:bg-white hover:text-brand-textDark transition-all">Details</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service 2: Vastu -->
+                    <div id="svc-vastu" class="relative rounded-2xl overflow-hidden shadow-card group h-[26rem] flex flex-col justify-end scroll-mt-28">
+                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=800" alt="Vastu" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                        <div class="absolute inset-0 service-gradient"></div>
+                        <div class="relative z-10 p-6 w-full">
+                            <h3 class="text-2xl font-bold text-white mb-2 font-serif">Vastu</h3>
+                            <p class="text-brand-textLightSoft text-sm mb-5 line-clamp-2">Home and office vastu guidance for energy balance, positivity, and harmonious living environments.</p>
+                            <div class="flex gap-3">
+                                <a href="https://wa.me/919958031356?text=Hey%20Dr.%20Ruchika%20Gupta%2C%20I%20visited%20on%20your%20website%2C%20I%20am%20interested%20in%20Vastu." target="_blank" class="flex-1 btn-primary text-center py-2.5 rounded-lg text-sm font-semibold shadow-sm flex items-center justify-center">Interested</a>
+                                <button onclick="openServiceModal('Vastu', 'Home and office vastu guidance for energy balance, positivity, and harmonious living environments. Remove energetic blockages and invite prosperity.')" class="flex-1 bg-white/10 backdrop-blur-md border border-white/20 text-white text-center py-2.5 rounded-lg text-sm font-semibold hover:bg-white hover:text-brand-textDark transition-all">Details</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service 3: Tarot reading -->
+                    <div id="svc-tarot" class="relative rounded-2xl overflow-hidden shadow-card group h-[26rem] flex flex-col justify-end scroll-mt-28">
+                        <img src="https://cdn.pixabay.com/photo/2020/08/23/18/17/tarot-5511610_1280.jpg" alt="Tarot reading" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                        <div class="absolute inset-0 service-gradient"></div>
+                        <div class="relative z-10 p-6 w-full">
+                            <h3 class="text-2xl font-bold text-white mb-2 font-serif">Tarot reading</h3>
+                            <p class="text-brand-textLightSoft text-sm mb-5 line-clamp-2">Love, relationship, and decision-making clarity through deep spiritual card reflection and intuition.</p>
+                            <div class="flex gap-3">
+                                <a href="https://wa.me/919958031356?text=Hey%20Dr.%20Ruchika%20Gupta%2C%20I%20visited%20on%20your%20website%2C%20I%20am%20interested%20in%20Tarot%20reading." target="_blank" class="flex-1 btn-primary text-center py-2.5 rounded-lg text-sm font-semibold shadow-sm flex items-center justify-center">Interested</a>
+                                <button onclick="openServiceModal('Tarot reading', 'Love, relationship, and decision-making clarity through deep spiritual card reflection and intuition. Gain immediate answers to your pressing questions.')" class="flex-1 bg-white/10 backdrop-blur-md border border-white/20 text-white text-center py-2.5 rounded-lg text-sm font-semibold hover:bg-white hover:text-brand-textDark transition-all">Details</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Service 4: Numerology -->
+                    <div id="svc-numerology" class="relative rounded-2xl overflow-hidden shadow-card group h-[26rem] flex flex-col justify-end scroll-mt-28">
+                        <img src="https://cdn.pixabay.com/photo/2024/07/11/12/36/numerology-8888077_1280.jpg" alt="Numerology" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                        <div class="absolute inset-0 service-gradient"></div>
+                        <div class="relative z-10 p-6 w-full">
+                            <h3 class="text-2xl font-bold text-white mb-2 font-serif">Numerology</h3>
+                            <p class="text-brand-textLightSoft text-sm mb-5 line-clamp-2">Life path analysis, name energy, lucky numbers, and personal year guidance to align your vibrations.</p>
+                            <div class="flex gap-3">
+                                <a href="https://wa.me/919958031356?text=Hey%20Dr.%20Ruchika%20Gupta%2C%20I%20visited%20on%20your%20website%2C%20I%20am%20interested%20in%20Numerology." target="_blank" class="flex-1 btn-primary text-center py-2.5 rounded-lg text-sm font-semibold shadow-sm flex items-center justify-center">Interested</a>
+                                <button onclick="openServiceModal('Numerology', 'Life path analysis, name energy calculation, finding lucky numbers, and personal year guidance to align your vibrations for success.')" class="flex-1 bg-white/10 backdrop-blur-md border border-white/20 text-white text-center py-2.5 rounded-lg text-sm font-semibold hover:bg-white hover:text-brand-textDark transition-all">Details</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service 5: Palmistry -->
+                    <div id="svc-palmistry" class="relative rounded-2xl overflow-hidden shadow-card group h-[26rem] flex flex-col justify-end scroll-mt-28">
+                        <img src="https://images.pexels.com/photos/7182616/pexels-photo-7182616.jpeg?_gl=1*1jg0vrf*_ga*MTc3NzcwNzQ1LjE3ODIxNTM2ODI.*_ga_8JE65Q40S6*czE3ODIxNTM2ODIkbzEkZzEkdDE3ODIxNTM5NzIkajMxJGwwJGgw" alt="Palmistry" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                        <div class="absolute inset-0 service-gradient"></div>
+                        <div class="relative z-10 p-6 w-full">
+                            <h3 class="text-2xl font-bold text-white mb-2 font-serif">Palmistry</h3>
+                            <p class="text-brand-textLightSoft text-sm mb-5 line-clamp-2">Hand line reading for deep personality insights, hidden strengths, and future path indications.</p>
+                            <div class="flex gap-3">
+                                <a href="https://wa.me/919958031356?text=Hey%20Dr.%20Ruchika%20Gupta%2C%20I%20visited%20on%20your%20website%2C%20I%20am%20interested%20in%20Palmistry." target="_blank" class="flex-1 btn-primary text-center py-2.5 rounded-lg text-sm font-semibold shadow-sm flex items-center justify-center">Interested</a>
+                                <button onclick="openServiceModal('Palmistry', 'Detailed hand line reading for deep personality insights, uncovering hidden strengths, and revealing future path indications written in your hands.')" class="flex-1 bg-white/10 backdrop-blur-md border border-white/20 text-white text-center py-2.5 rounded-lg text-sm font-semibold hover:bg-white hover:text-brand-textDark transition-all">Details</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service 6: Reiki consultant -->
+                    <div id="svc-reiki" class="relative rounded-2xl overflow-hidden shadow-card group h-[26rem] flex flex-col justify-end scroll-mt-28">
+                        <img src="https://cdn.pixabay.com/photo/2014/03/11/22/57/wellness-285590_1280.jpg" alt="Reiki consultant" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                        <div class="absolute inset-0 service-gradient"></div>
+                        <div class="relative z-10 p-6 w-full">
+                            <h3 class="text-2xl font-bold text-white mb-2 font-serif">Reiki Healing</h3>
+                            <p class="text-brand-textLightSoft text-sm mb-5 line-clamp-2">Energy healing, chakra balance, emotional release, and stress relief support for inner peace.</p>
+                            <div class="flex gap-3">
+                                <a href="https://wa.me/919958031356?text=Hey%20Dr.%20Ruchika%20Gupta%2C%20I%20visited%20on%20your%20website%2C%20I%20am%20interested%20in%20Reiki%20consultant." target="_blank" class="flex-1 btn-primary text-center py-2.5 rounded-lg text-sm font-semibold shadow-sm flex items-center justify-center">Interested</a>
+                                <button onclick="openServiceModal('Reiki consultant', 'Energy healing, complete chakra balance, emotional release, and stress relief support for profound inner peace and spiritual awakening.')" class="flex-1 bg-white/10 backdrop-blur-md border border-white/20 text-white text-center py-2.5 rounded-lg text-sm font-semibold hover:bg-white hover:text-brand-textDark transition-all">Details</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service 7: Life coach counsellor -->
+                    <div id="svc-lifecoach" class="relative rounded-2xl overflow-hidden shadow-card group h-[26rem] md:col-span-2 lg:col-span-1 lg:col-start-2 flex flex-col justify-end scroll-mt-28">
+                        <img src="https://images.unsplash.com/photo-1499209974431-9dddcece7f88?auto=format&fit=crop&q=80&w=800" alt="Life coach counsellor" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                        <div class="absolute inset-0 service-gradient"></div>
+                        <div class="relative z-10 p-6 w-full">
+                            <h3 class="text-2xl font-bold text-white mb-2 font-serif">Life coach</h3>
+                            <p class="text-brand-textLightSoft text-sm mb-5 line-clamp-2">Confidence building, relationship support, and clarity in major life decisions and transitions.</p>
+                            <div class="flex gap-3">
+                                <a href="https://wa.me/919958031356?text=Hey%20Dr.%20Ruchika%20Gupta%2C%20I%20visited%20on%20your%20website%2C%20I%20am%20interested%20in%20Life%20coach%20counsellor." target="_blank" class="flex-1 btn-primary text-center py-2.5 rounded-lg text-sm font-semibold shadow-sm flex items-center justify-center">Interested</a>
+                                <button onclick="openServiceModal('Life coach counsellor', 'Confidence building, relationship support, overcoming personal mental blocks, and finding clear direction during major life decisions and transitions.')" class="flex-1 bg-white/10 backdrop-blur-md border border-white/20 text-white text-center py-2.5 rounded-lg text-sm font-semibold hover:bg-white hover:text-brand-textDark transition-all">Details</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. KUNDLI SECTION -->
+        <section id="kundli" class="py-16 bg-brand-cosmic text-white relative overflow-hidden border-y border-white/5">
+            <!-- Celestial Purle Glow -->
+            <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-brand-purple/20 rounded-full blur-[120px] pointer-events-none"></div>
+
+            <div class="container mx-auto px-4 max-w-5xl relative z-10">
+                <div class="text-center mb-10">
+                    <h2 class="text-3xl md:text-4xl font-serif font-bold mb-4">
+                        Get Your <span class="text-brand-gold">Free Kundali</span>
+                    </h2>
+                    <p class="text-brand-textLightSoft max-w-2xl mx-auto">
+                        Generate your basic birth chart instantly. Enter details for complete analysis.
+                    </p>
+                </div>
+
+                <div class="bg-kundli border border-brand-purple/30 rounded-3xl p-8 md:p-10 shadow-glow max-w-2xl mx-auto relative overflow-hidden">
+                    <!-- Background decoration -->
+                    <div class="absolute top-0 right-0 p-4 opacity-10 pointer-events-none"><i data-lucide="sun" class="w-40 h-40"></i></div>
+                    
+                    <h3 class="text-2xl font-bold text-white mb-6 flex items-center gap-2 relative z-10">
+                        <i data-lucide="sparkles" class="w-6 h-6"></i> Free Kundali Generator
+                    </h3>
+                    
+                    <!-- Error Message Div -->
+                    <div id="kundli-error" class="hidden bg-red-900/40 border border-red-500/30 text-white text-sm px-4 py-3 rounded-xl mb-4 font-medium items-center gap-2 relative z-10">
+                        <i data-lucide="alert-circle" class="w-5 h-5 shrink-0"></i>
+                        <span id="kundli-error-text"></span>
+                    </div>
+
+                    <form id="kundli-form" class="space-y-5 relative z-10">
+                        <div>
+                            <label class="block text-sm font-medium text-white/90 mb-2 flex items-center gap-1"><i data-lucide="user" class="w-4 h-4"></i> Name</label>
+                            <input type="text" id="k-name" class="w-full bg-brand-cardSoft border-0 rounded-xl px-4 py-3.5 text-brand-textDark focus:ring-2 focus:ring-brand-purple focus:outline-none" placeholder="Your name" required>
+                        </div>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-sm font-medium text-white/90 mb-2 flex items-center gap-1"><i data-lucide="calendar" class="w-4 h-4"></i> Date of Birth</label>
+                                <input type="date" id="k-dob" class="w-full bg-brand-cardSoft border-0 rounded-xl px-4 py-3.5 text-brand-textDark focus:ring-2 focus:ring-brand-purple focus:outline-none" required>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-white/90 mb-2 flex items-center gap-1"><i data-lucide="clock" class="w-4 h-4"></i> Time</label>
+                                <input type="time" id="k-tob" class="w-full bg-brand-cardSoft border-0 rounded-xl px-4 py-3.5 text-brand-textDark focus:ring-2 focus:ring-brand-purple focus:outline-none" required>
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-white/90 mb-2 flex items-center gap-1"><i data-lucide="map-pin" class="w-4 h-4"></i> Place of Birth</label>
+                            <input type="text" id="k-place" class="w-full bg-brand-cardSoft border-0 rounded-xl px-4 py-3.5 text-brand-textDark focus:ring-2 focus:ring-brand-purple focus:outline-none" placeholder="City, State" required>
+                        </div>
+                        <button type="submit" id="kundli-btn" class="w-full py-4 mt-4 rounded-xl bg-brand-cosmic2 text-white font-bold text-lg hover:bg-brand-cosmic3 transition-colors shadow-lg disabled:opacity-70 flex justify-center items-center gap-2">
+                            Generate Basic Kundali
+                        </button>
+                    </form>
+
+                    <!-- Kundli Result Container -->
+                    <div id="kundli-result" class="hidden mt-8 bg-brand-light border border-brand-purple/10 rounded-2xl p-6 md:p-8 shadow-card text-brand-textDark text-left relative overflow-hidden">
+                        <div class="absolute top-0 right-0 p-4 opacity-5 pointer-events-none"><i data-lucide="moon" class="w-32 h-32 text-brand-textDark"></i></div>
+                        <h4 class="text-xl font-serif font-bold text-brand-purple mb-4 border-b border-brand-purple/10 pb-3">Basic Kundli Details</h4>
+                        
+                        <div class="grid grid-cols-2 gap-y-4 gap-x-2 text-sm relative z-10">
+                            <div><span class="text-brand-textDarkSoft text-xs uppercase tracking-wider block mb-0.5">Name</span> <strong id="res-name" class="capitalize text-base text-brand-textDark"></strong></div>
+                            <div><span class="text-brand-textDarkSoft text-xs uppercase tracking-wider block mb-0.5">Place</span> <strong id="res-place" class="capitalize text-base text-brand-textDark"></strong></div>
+                            
+                            <div><span class="text-brand-textDarkSoft text-xs uppercase tracking-wider block mb-0.5">Date of Birth</span> <strong id="res-dob" class="text-base text-brand-textDark"></strong></div>
+                            <div><span class="text-brand-textDarkSoft text-xs uppercase tracking-wider block mb-0.5">Time of Birth</span> <strong id="res-tob" class="text-base text-brand-textDark"></strong></div>
+                            
+                            <div class="col-span-2 border-t border-brand-purple/10 my-2"></div>
+                            
+                            <div class="col-span-2 sm:col-span-1 bg-white p-4 rounded-xl border border-brand-purple/15"><span class="text-brand-textDarkSoft text-xs uppercase tracking-wider block mb-1 font-semibold">Moon Sign (Rashi)</span> <strong id="res-rashi" class="text-lg text-brand-purple font-serif"></strong></div>
+                            <div class="col-span-2 sm:col-span-1 bg-white p-4 rounded-xl border border-brand-purple/15"><span class="text-brand-textDarkSoft text-xs uppercase tracking-wider block mb-1 font-semibold">Birth Nakshatra</span> <strong id="res-nakshatra" class="text-lg text-brand-purple font-serif"></strong></div>
+                            
+                            <div class="col-span-2 border-t border-brand-purple/10 my-2"></div>
+
+                            <div><span class="text-brand-textDarkSoft text-xs uppercase tracking-wider block mb-0.5">Vara (Day)</span> <strong id="res-vara" class="text-brand-textDark"></strong></div>
+                            <div><span class="text-brand-textDarkSoft text-xs uppercase tracking-wider block mb-0.5">Yoga</span> <strong id="res-yoga" class="text-brand-textDark"></strong></div>
+                            <div><span class="text-brand-textDarkSoft text-xs uppercase tracking-wider block mb-0.5">Karana</span> <strong id="res-karana" class="text-brand-textDark"></strong></div>
+                            
+                            <div>
+                                <span class="text-brand-textDarkSoft text-xs uppercase tracking-wider block mb-1 font-semibold">Mangal Dosha</span> 
+                                <strong id="res-dosha" class="px-3 py-1 rounded text-xs font-bold inline-block border"></strong>
+                            </div>
+                        </div>
+
+                        <a href="https://wa.me/919958031356?text=Hi,%20I%20generated%20my%20Kundli%20on%20your%20website%20and%20need%20a%20detailed%20analysis." target="_blank" class="mt-8 btn-primary block text-center w-full py-4 rounded-xl font-bold text-base relative z-10 flex items-center justify-center gap-2">
+                            Get Detailed Analysis on WhatsApp <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. PRODUCTS SECTION -->
+        <section id="products" class="py-16 bg-brand-card">
+            <div class="container mx-auto px-4 max-w-6xl">
+                <div class="text-center mb-10">
+                    <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-brand-purple/10 border border-brand-purple/20 text-brand-purple font-semibold text-sm mb-4">
+                        <div class="w-2 h-2 rounded-full bg-brand-purple"></div> Problem Solutions
+                    </div>
+                    <h2 class="text-3xl md:text-4xl font-serif font-bold text-brand-textDark mb-4">
+                        Shop by <span class="text-brand-purple">Life Problems</span>
+                    </h2>
+                    <p class="text-brand-textDarkSoft max-w-2xl mx-auto">
+                        Find powerful Vedic remedies for specific life challenges. Each solution is energized and authentic.
+                    </p>
+                </div>
+                
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
+                    <!-- Product 1 -->
+                    <div class="bg-white rounded-2xl p-4 shadow-[0_10px_30px_rgba(18,14,40,0.04)] text-center group flex flex-col border border-brand-purple/10 hover:border-brand-purple/30 transition-all">
+                        <div class="aspect-square bg-brand-cardSoft rounded-xl mb-4 overflow-hidden border border-brand-purple/5">
+                            <img src="https://like-pink-03uamzdz.edgeone.app/file_0000000019e0720990cc6b80bed1feec.png" alt="Gemstones" class="w-full h-full object-cover group-hover:scale-105 transition-transform" />
+                        </div>
+                        <h4 class="font-bold text-brand-textDark mb-1">Gemstones</h4>
+                        <p class="text-xs text-brand-textDarkSoft mb-4 flex-1">Precious & Semi-precious</p>
+                        <a href="https://wa.me/919958031356?text=Enquiry about Gemstones" target="_blank" class="w-full py-2 rounded-lg border border-brand-purple text-brand-purple text-sm font-semibold hover:bg-brand-purple hover:text-white transition-colors">
+                            Enquire
+                        </a>
+                    </div>
+                    <!-- Product 2 -->
+                    <div class="bg-white rounded-2xl p-4 shadow-[0_10px_30px_rgba(18,14,40,0.04)] text-center group flex flex-col border border-brand-purple/10 hover:border-brand-purple/30 transition-all">
+                        <div class="aspect-square bg-brand-cardSoft rounded-xl mb-4 overflow-hidden border border-brand-purple/5">
+                            <img src="https://definite-maroon-qs24ptoi.edgeone.app/file_00000000e54072068aa1f80a027228cd.png" alt="Rudraksha" class="w-full h-full object-cover group-hover:scale-105 transition-transform" />
+                        </div>
+                        <h4 class="font-bold text-brand-textDark mb-1">Rudraksha</h4>
+                        <p class="text-xs text-brand-textDarkSoft mb-4 flex-1">Authentic & Energized</p>
+                        <a href="https://wa.me/919958031356?text=Enquiry about Rudraksha" target="_blank" class="w-full py-2 rounded-lg border border-brand-purple text-brand-purple text-sm font-semibold hover:bg-brand-purple hover:text-white transition-colors">
+                            Enquire
+                        </a>
+                    </div>
+                    <!-- Product 3 -->
+                    <div class="bg-white rounded-2xl p-4 shadow-[0_10px_30px_rgba(18,14,40,0.04)] text-center group flex flex-col border border-brand-purple/10 hover:border-brand-purple/30 transition-all">
+                        <div class="aspect-square bg-brand-cardSoft rounded-xl mb-4 overflow-hidden border border-brand-purple/5">
+                            <img src="https://driving-sapphire-lkyblkjq.edgeone.app/file_0000000014b47206956af52ac76ae514.png" alt="Crystals" class="w-full h-full object-cover group-hover:scale-105 transition-transform" />
+                        </div>
+                        <h4 class="font-bold text-brand-textDark mb-1">Crystals</h4>
+                        <p class="text-xs text-brand-textDarkSoft mb-4 flex-1">Healing & Positivity</p>
+                        <a href="https://wa.me/919958031356?text=Enquiry about Crystals" target="_blank" class="w-full py-2 rounded-lg border border-brand-purple text-brand-purple text-sm font-semibold hover:bg-brand-purple hover:text-white transition-colors">
+                            Enquire
+                        </a>
+                    </div>
+                    <!-- Product 4 -->
+                    <div class="bg-white rounded-2xl p-4 shadow-[0_10px_30px_rgba(18,14,40,0.04)] text-center group flex flex-col border border-brand-purple/10 hover:border-brand-purple/30 transition-all">
+                        <div class="aspect-square bg-brand-cardSoft rounded-xl mb-4 overflow-hidden border border-brand-purple/5">
+                            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=400" alt="Vastu Items" class="w-full h-full object-cover group-hover:scale-105 transition-transform" />
+                        </div>
+                        <h4 class="font-bold text-brand-textDark mb-1">Vastu Items</h4>
+                        <p class="text-xs text-brand-textDarkSoft mb-4 flex-1">Space Harmonization</p>
+                        <a href="https://wa.me/919958031356?text=Enquiry about Vastu Items" target="_blank" class="w-full py-2 rounded-lg border border-brand-purple text-brand-purple text-sm font-semibold hover:bg-brand-purple hover:text-white transition-colors">
+                            Enquire
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. GALLERY SECTION -->
+        <section id="gallery" class="py-16 bg-brand-light border-t border-brand-purple/10">
+            <div class="container mx-auto px-4 max-w-6xl">
+                <div class="text-center mb-10">
+                    <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white text-brand-purple border border-brand-purple/20 font-semibold text-sm mb-4 shadow-sm">
+                        <i data-lucide="image" class="w-4 h-4"></i> Glimpses
+                    </div>
+                    <h2 class="text-3xl md:text-4xl font-serif font-bold text-brand-textDark mb-4">
+                        Our <span class="text-brand-purple">Gallery</span>
+                    </h2>
+                    <p class="text-brand-textDarkSoft max-w-2xl mx-auto">
+                        A look into our spiritual environment, consultations, and events. Click any image to preview.
+                    </p>
+                </div>
+                
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
+                    <!-- Gallery Image 1 -->
+                    <div class="relative overflow-hidden rounded-2xl shadow-soft group cursor-pointer aspect-square bg-white border border-brand-purple/10" onclick="openGalleryModal('https://nasty-olive-3fnlj4fp.edgeone.app/IMG-20260622-WA0014.jpg')">
+                        <img src="https://nasty-olive-3fnlj4fp.edgeone.app/IMG-20260622-WA0014.jpg" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="Gallery Image 1" loading="lazy" />
+                        <div class="absolute inset-0 bg-transparent group-hover:bg-[#7B3FF2]/30 transition-colors duration-300 flex items-center justify-center">
+                            <div class="bg-white/95 p-3 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform scale-50 group-hover:scale-100 shadow-lg">
+                                <i data-lucide="zoom-in" class="w-6 h-6 text-brand-purple"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Gallery Image 2 -->
+                    <div class="relative overflow-hidden rounded-2xl shadow-soft group cursor-pointer aspect-square bg-white border border-brand-purple/10" onclick="openGalleryModal('https://valuable-magenta-dbebywb6.edgeone.app/IMG-20260622-WA0019.jpg')">
+                        <img src="https://valuable-magenta-dbebywb6.edgeone.app/IMG-20260622-WA0019.jpg" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="Gallery Image 2" loading="lazy" />
+                        <div class="absolute inset-0 bg-transparent group-hover:bg-[#7B3FF2]/30 transition-colors duration-300 flex items-center justify-center">
+                            <div class="bg-white/95 p-3 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform scale-50 group-hover:scale-100 shadow-lg">
+                                <i data-lucide="zoom-in" class="w-6 h-6 text-brand-purple"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Image 3 -->
+                    <div class="relative overflow-hidden rounded-2xl shadow-soft group cursor-pointer aspect-square bg-white border border-brand-purple/10" onclick="openGalleryModal('https://mysterious-crimson-acxi2v9i.edgeone.app/IMG-20260622-WA0018.jpg')">
+                        <img src="https://mysterious-crimson-acxi2v9i.edgeone.app/IMG-20260622-WA0018.jpg" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="Gallery Image 3" loading="lazy" />
+                        <div class="absolute inset-0 bg-transparent group-hover:bg-[#7B3FF2]/30 transition-colors duration-300 flex items-center justify-center">
+                            <div class="bg-white/95 p-3 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform scale-50 group-hover:scale-100 shadow-lg">
+                                <i data-lucide="zoom-in" class="w-6 h-6 text-brand-purple"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Image 4 -->
+                    <div class="relative overflow-hidden rounded-2xl shadow-soft group cursor-pointer aspect-square bg-white border border-brand-purple/10" onclick="openGalleryModal('https://sympathetic-beige-cltnzpix.edgeone.app/IMG-20260622-WA0017.jpg')">
+                        <img src="https://sympathetic-beige-cltnzpix.edgeone.app/IMG-20260622-WA0017.jpg" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="Gallery Image 4" loading="lazy" />
+                        <div class="absolute inset-0 bg-transparent group-hover:bg-[#7B3FF2]/30 transition-colors duration-300 flex items-center justify-center">
+                            <div class="bg-white/95 p-3 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform scale-50 group-hover:scale-100 shadow-lg">
+                                <i data-lucide="zoom-in" class="w-6 h-6 text-brand-purple"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Image 5 -->
+                    <div class="relative overflow-hidden rounded-2xl shadow-soft group cursor-pointer aspect-square bg-white border border-brand-purple/10" onclick="openGalleryModal('https://raspy-bronze-j86vijdt.edgeone.app/file_00000000f7e871fa89838d1d5173300b.png')">
+                        <img src="https://raspy-bronze-j86vijdt.edgeone.app/file_00000000f7e871fa89838d1d5173300b.png" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="Gallery Image 5" loading="lazy" />
+                        <div class="absolute inset-0 bg-transparent group-hover:bg-[#7B3FF2]/30 transition-colors duration-300 flex items-center justify-center">
+                            <div class="bg-white/95 p-3 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform scale-50 group-hover:scale-100 shadow-lg">
+                                <i data-lucide="zoom-in" class="w-6 h-6 text-brand-purple"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Image 6 -->
+                    <div class="relative overflow-hidden rounded-2xl shadow-soft group cursor-pointer aspect-square bg-white border border-brand-purple/10" onclick="openGalleryModal('https://annual-coral-c4bz3q5a.edgeone.app/IMG-20260622-WA0013.jpg')">
+                        <img src="https://annual-coral-c4bz3q5a.edgeone.app/IMG-20260622-WA0013.jpg" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="Gallery Image 6" loading="lazy" />
+                        <div class="absolute inset-0 bg-transparent group-hover:bg-[#7B3FF2]/30 transition-colors duration-300 flex items-center justify-center">
+                            <div class="bg-white/95 p-3 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform scale-50 group-hover:scale-100 shadow-lg">
+                                <i data-lucide="zoom-in" class="w-6 h-6 text-brand-purple"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 8. FAQ SECTION -->
+        <section id="faq" class="py-16 bg-brand-cardSoft border-y border-brand-purple/10">
+            <div class="container mx-auto px-4 max-w-3xl">
+                <div class="text-center mb-10">
+                    <h2 class="text-3xl font-serif font-bold text-brand-textDark mb-3">Frequently Asked Questions</h2>
+                    <p class="text-brand-textDarkSoft">Expert answers by Dr. Ruchika Gupta — 23+ years of Vedic astrology experience</p>
+                </div>
+                
+                <div class="space-y-4">
+                    <details class="group bg-white rounded-xl shadow-sm border border-brand-purple/10 overflow-hidden cursor-pointer hover:shadow-soft transition-all">
+                        <summary class="p-5 font-semibold text-brand-textDark flex justify-between items-center outline-none">
+                            How can I consult an astrologer online?
+                            <i data-lucide="chevron-down" class="w-4 h-4 text-brand-purple group-open:rotate-180 transition-transform"></i>
+                        </summary>
+                        <div class="p-5 pt-0 text-brand-textDarkSoft leading-relaxed">
+                            You can book a consultation directly by clicking the 'WhatsApp' button on our website. We offer detailed telephonic and chat consultations.
+                        </div>
+                    </details>
+                    <details class="group bg-white rounded-xl shadow-sm border border-brand-purple/10 overflow-hidden cursor-pointer hover:shadow-soft transition-all">
+                        <summary class="p-5 font-semibold text-brand-textDark flex justify-between items-center outline-none">
+                            What services does Dr. Ruchika Gupta offer?
+                            <i data-lucide="chevron-down" class="w-4 h-4 text-brand-purple group-open:rotate-180 transition-transform"></i>
+                        </summary>
+                        <div class="p-5 pt-0 text-brand-textDarkSoft leading-relaxed">
+                            We offer comprehensive Astrology, Vastu Shastra, Tarot Reading, Numerology, Palmistry, and Reiki Healing consultations.
+                        </div>
+                    </details>
+                    <details class="group bg-white rounded-xl shadow-sm border border-brand-purple/10 overflow-hidden cursor-pointer hover:shadow-soft transition-all">
+                        <summary class="p-5 font-semibold text-brand-textDark flex justify-between items-center outline-none">
+                            Is online astrology consultation accurate?
+                            <i data-lucide="chevron-down" class="w-4 h-4 text-brand-purple group-open:rotate-180 transition-transform"></i>
+                        </summary>
+                        <div class="p-5 pt-0 text-brand-textDarkSoft leading-relaxed">
+                            Yes, Vedic astrology relies on precise mathematical calculations based on your birth details (Date, Time, Place). Online consultations provide the exact same accuracy as in-person visits.
+                        </div>
+                    </details>
+                </div>
+                
+                <div class="text-center mt-8">
+                    <a href="#packages" onclick="navigateTo('view-packages'); window.scrollTo(0,0); return false;" class="btn-primary inline-block px-8 py-3.5 rounded-xl font-semibold cursor-pointer">
+                        Book a Consultation with Dr. Ruchika
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 9. TESTIMONIALS SECTION (AUTO-SCROLLING CAROUSEL) -->
+        <section id="testimonials" class="py-16 bg-testi border-b border-white/5 overflow-hidden w-full max-w-none relative">
+            <div class="container mx-auto px-4 max-w-6xl relative z-10">
+                <div class="text-center mb-10">
+                    <h2 class="text-3xl font-serif font-bold text-white mb-3">What Clients Say</h2>
+                    <p class="text-brand-textLightSoft max-w-2xl mx-auto">Trusted by thousands of clients worldwide for accurate predictions and guidance.</p>
+                </div>
+                
+                <!-- Carousel Container -->
+                <div class="relative w-full">
+                    <div id="review-track" class="flex items-stretch gap-6 overflow-x-auto scrollbar-hide py-4 cursor-grab w-full scroll-smooth">
+                        <!-- 1. Shivani Sharma -->
+                        <div class="bg-brand-cardSoft p-6 md:p-8 rounded-[2rem] shadow-card flex-shrink-0 w-[85vw] sm:w-[350px] md:w-[400px] flex flex-col justify-between border border-brand-purple/10 select-none">
+                            <div>
+                                <div class="flex text-brand-gold mb-4 gap-1">
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                </div>
+                                <p class="text-brand-textDark leading-relaxed italic text-[15px]">"An incredibly accurate and insightful astrologer and tarot reader. Every session has given me clarity, direction, and reassurance during important phases of my life. Her guidance is honest, practical, and delivered with so much compassion. I always leave feeling lighter and more confident about my decisions. Highly highly recommended!"</p>
+                            </div>
+                            <div class="flex items-center gap-4 border-t border-brand-purple/10 pt-5 mt-6">
+                                <div class="w-10 h-10 rounded-full btn-primary flex items-center justify-center text-white font-bold text-sm">S</div>
+                                <h5 class="text-brand-textDark font-bold">Shivani Sharma</h5>
+                            </div>
+                        </div>
+
+                        <!-- 2. Nisha Gupta -->
+                        <div class="bg-brand-cardSoft p-6 md:p-8 rounded-[2rem] shadow-card flex-shrink-0 w-[85vw] sm:w-[350px] md:w-[400px] flex flex-col justify-between border border-brand-purple/10 select-none">
+                            <div>
+                                <div class="flex text-brand-gold mb-4 gap-1">
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                </div>
+                                <p class="text-brand-textDark leading-relaxed italic text-[15px]">"Extremely articulate, precise and perfect in her analysis of the horoscope. She spots the exact problem and provides accurate remedies & solutions for the same. Very kind and polite to speak to, I highly recommend her consultation."</p>
+                            </div>
+                            <div class="flex items-center gap-4 border-t border-brand-purple/10 pt-5 mt-6">
+                                <div class="w-10 h-10 rounded-full btn-primary flex items-center justify-center text-white font-bold text-sm">N</div>
+                                <h5 class="text-brand-textDark font-bold">Nisha Gupta</h5>
+                            </div>
+                        </div>
+
+                        <!-- 3. Simran Khanna -->
+                        <div class="bg-brand-cardSoft p-6 md:p-8 rounded-[2rem] shadow-card flex-shrink-0 w-[85vw] sm:w-[350px] md:w-[400px] flex flex-col justify-between border border-brand-purple/10 select-none">
+                            <div>
+                                <div class="flex text-brand-gold mb-4 gap-1">
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                </div>
+                                <p class="text-brand-textDark leading-relaxed italic text-[15px]">"Dear Ruchika Ji, I found you at a time when I needed guidance. I connected with you and I am grateful for your readings and your channelings. Your reading has always proved me right. It always guided me in the right direction. I can say without a doubt that I am loyal to you and your services!"</p>
+                            </div>
+                            <div class="flex items-center gap-4 border-t border-brand-purple/10 pt-5 mt-6">
+                                <div class="w-10 h-10 rounded-full btn-primary flex items-center justify-center text-white font-bold text-sm">S</div>
+                                <h5 class="text-brand-textDark font-bold">Simran Khanna</h5>
+                            </div>
+                        </div>
+
+                        <!-- 4. Kavya Iyer -->
+                        <div class="bg-brand-cardSoft p-6 md:p-8 rounded-[2rem] shadow-card flex-shrink-0 w-[85vw] sm:w-[350px] md:w-[400px] flex flex-col justify-between border border-brand-purple/10 select-none">
+                            <div>
+                                <div class="flex text-brand-gold mb-4 gap-1">
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                </div>
+                                <p class="text-brand-textDark leading-relaxed italic text-[15px]">"She has very good knowledge.... Uses combination of different tools. Her experience really speaks..... Hats to her..... Keep it up.... Would definitely recommend her"</p>
+                            </div>
+                            <div class="flex items-center gap-4 border-t border-brand-purple/10 pt-5 mt-6">
+                                <div class="w-10 h-10 rounded-full btn-primary flex items-center justify-center text-white font-bold text-sm">K</div>
+                                <h5 class="text-brand-textDark font-bold">Kavya Iyer</h5>
+                            </div>
+                        </div>
+
+                        <!-- 5. Mohit Verma -->
+                        <div class="bg-brand-cardSoft p-6 md:p-8 rounded-[2rem] shadow-card flex-shrink-0 w-[85vw] sm:w-[350px] md:w-[400px] flex flex-col justify-between border border-brand-purple/10 select-none">
+                            <div>
+                                <div class="flex text-brand-gold mb-4 gap-1">
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                </div>
+                                <p class="text-brand-textDark leading-relaxed italic text-[15px]">"Very positive approach and accurate predictions highly recommended"</p>
+                            </div>
+                            <div class="flex items-center gap-4 border-t border-brand-purple/10 pt-5 mt-6">
+                                <div class="w-10 h-10 rounded-full btn-primary flex items-center justify-center text-white font-bold text-sm">M</div>
+                                <h5 class="text-brand-textDark font-bold">Mohit Verma</h5>
+                            </div>
+                        </div>
+
+                        <!-- 6. Sandeep Chauhan -->
+                        <div class="bg-brand-cardSoft p-6 md:p-8 rounded-[2rem] shadow-card flex-shrink-0 w-[85vw] sm:w-[350px] md:w-[400px] flex flex-col justify-between border border-brand-purple/10 select-none">
+                            <div>
+                                <div class="flex text-brand-gold mb-4 gap-1">
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                </div>
+                                <p class="text-brand-textDark leading-relaxed italic text-[15px]">"She was very clear and honest. I will recommend her."</p>
+                            </div>
+                            <div class="flex items-center gap-4 border-t border-brand-purple/10 pt-5 mt-6">
+                                <div class="w-10 h-10 rounded-full btn-primary flex items-center justify-center text-white font-bold text-sm">S</div>
+                                <h5 class="text-brand-textDark font-bold">Sandeep Chauhan</h5>
+                            </div>
+                        </div>
+
+                        <!-- 7. Meera Joshi -->
+                        <div class="bg-brand-cardSoft p-6 md:p-8 rounded-[2rem] shadow-card flex-shrink-0 w-[85vw] sm:w-[350px] md:w-[400px] flex flex-col justify-between border border-brand-purple/10 select-none">
+                            <div>
+                                <div class="flex text-brand-gold mb-4 gap-1">
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                </div>
+                                <p class="text-brand-textDark leading-relaxed italic text-[15px]">"She is very good and have pointed discussions on the topic and she has given me good advise to make things better ."</p>
+                            </div>
+                            <div class="flex items-center gap-4 border-t border-brand-purple/10 pt-5 mt-6">
+                                <div class="w-10 h-10 rounded-full btn-primary flex items-center justify-center text-white font-bold text-sm">M</div>
+                                <h5 class="text-brand-textDark font-bold">Meera Joshi</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- NEW STATS SECTION (Animated 50000+) -->
+        <section id="stats" class="py-12 bg-brand-cardSoft text-brand-textDark text-center border-b border-brand-purple/10">
+            <div class="container mx-auto px-4">
+                <div class="text-4xl md:text-6xl font-extrabold flex flex-col items-center justify-center">
+                    <span><span id="client-count">0</span>+</span>
+                    <span class="text-2xl md:text-3xl mt-2 font-bold text-brand-purple font-serif tracking-wide">Happy Clients</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- 10. SUBSCRIBE / CONTACT BANNER -->
+        <section id="contact" class="py-16 bg-brand-light text-brand-textDark border-b border-brand-purple/10">
+            <div class="container mx-auto px-4 max-w-4xl text-center">
+                <h2 class="text-3xl md:text-5xl font-bold mb-4">Stay Connected <br/> with Dr. Ruchika</h2>
+                <p class="text-brand-textDarkSoft text-lg mb-10 max-w-2xl mx-auto">
+                    Receive weekly Rashifal, exclusive insights, astrology tips, and updates on new spiritual products and services.
+                </p>
+                
+                <!-- Contact / Lead Form -->
+                <div class="bg-hero p-8 md:p-10 rounded-[2rem] shadow-glow border border-brand-purple/20 max-w-md mx-auto relative overflow-hidden">
+                    <form id="contact-form" class="space-y-4 relative z-10">
+                        <input required type="text" id="c-name" class="w-full bg-white/10 border border-white/10 rounded-xl px-5 py-4 text-white placeholder-white/60 focus:outline-none focus:bg-white/15 focus:border-brand-purpleSoft transition-all" placeholder="Enter your name">
+                        <input required type="tel" id="c-phone" class="w-full bg-white/10 border border-white/10 rounded-xl px-5 py-4 text-white placeholder-white/60 focus:outline-none focus:bg-white/15 focus:border-brand-purpleSoft transition-all" placeholder="Enter your WhatsApp number">
+                        <button type="submit" class="btn-primary w-full py-4 rounded-xl font-bold text-lg flex justify-center items-center gap-2 mt-2">
+                            <i data-lucide="send" class="w-5 h-5"></i> Connect on WhatsApp
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Click to Call Phone Numbers -->
+                <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4 md:gap-8 text-brand-textDark font-bold text-lg md:text-xl">
+                    <a href="tel:+917217785508" class="flex items-center gap-2 hover:text-brand-purple hover:scale-105 transition-all"><i data-lucide="phone" class="w-5 h-5 text-brand-purple"></i> +91 7217785508</a>
+                    <span class="hidden sm:inline-block text-brand-textDarkSoft/30">|</span>
+                    <a href="tel:+919958031356" class="flex items-center gap-2 hover:text-brand-purple hover:scale-105 transition-all"><i data-lucide="phone" class="w-5 h-5 text-brand-purple"></i> +91 9958031356</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- VIEW: DEDICATED ABOUT PAGE (Hidden by default) -->
+    <main id="view-about" class="hidden pt-28 pb-16 animate-[fadeIn_0.5s_ease-out]">
+        
+        <!-- About Header Section -->
+        <section class="py-12 md:py-20 bg-brand-light relative overflow-hidden">
+            <div class="container mx-auto px-4 max-w-6xl">
+                <div class="grid md:grid-cols-2 gap-12 lg:gap-20 items-center">
+                    
+                    <div class="relative rounded-[2rem] overflow-hidden max-w-md mx-auto md:mx-0 z-10">
+                        <div class="rounded-[2rem] overflow-hidden shadow-card group">
+                            <img src="https://annual-coral-c4bz3q5a.edgeone.app/IMG-20260622-WA0013.jpg" alt="Dr. Ruchika Gupta" class="w-full h-auto object-cover aspect-square group-hover:scale-105 transition-transform duration-700" />
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-6">
+                        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white border border-brand-purple/20 text-brand-purple font-semibold text-sm shadow-sm">
+                            <i data-lucide="user" class="w-4 h-4"></i> Spiritual Consultant
+                        </div>
+                        
+                        <h1 class="text-4xl md:text-5xl font-serif font-bold text-brand-textDark leading-tight">
+                            About Dr. Ruchika Gupta
+                        </h1>
+                        
+                        <div class="text-brand-textDarkSoft text-lg leading-relaxed space-y-4">
+                            <p>
+                                Ruchika Gupta is a certified Astrologer and Vastu Consultant dedicated to providing accurate horoscope-based guidance. She combines traditional astrological knowledge with multiple calculation methods to deliver insightful and reliable predictions tailored to each individual.
+                            </p>
+                            <p>
+                                Along with her expertise, Ruchika uses her intuition to offer personalized guidance and positive direction. Her goal is to help clients gain clarity, overcome challenges, and make confident decisions for a happier and more balanced life.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education & Research Section -->
+        <section class="py-16 md:py-24 bg-testi text-white relative">
+            <!-- Celestial Glow Accents -->
+            <div class="absolute top-0 right-0 w-[400px] h-[400px] bg-brand-purple/20 rounded-full blur-[120px] pointer-events-none"></div>
+
+            <div class="container mx-auto px-4 max-w-6xl relative z-10">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-serif font-bold mb-4">
+                        Education, Qualifications & <span class="text-brand-gold">Research</span>
+                    </h2>
+                    <p class="text-brand-textLightSoft max-w-2xl mx-auto">
+                        A strong academic foundation dedicated to the mastery of authentic Vedic sciences.
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-6 md:gap-8">
+                    
+                    <!-- Card 1 -->
+                    <div class="bg-white/5 border border-brand-purple/20 p-8 rounded-2xl shadow-glow hover:bg-white/10 transition-colors">
+                        <div class="w-12 h-12 rounded-xl bg-brand-gold/10 text-brand-gold flex items-center justify-center mb-6">
+                            <i data-lucide="graduation-cap" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Jyotish Alankar</h3>
+                        <p class="text-brand-textLightSoft leading-relaxed">
+                            Ruchika Gupta holds the prestigious title of Jyotish Alankar, reflecting her strong academic foundation and expertise in authentic Vedic Astrology.
+                        </p>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="bg-white/5 border border-brand-purple/20 p-8 rounded-2xl shadow-glow hover:bg-white/10 transition-colors">
+                        <div class="w-12 h-12 rounded-xl bg-brand-gold/10 text-brand-gold flex items-center justify-center mb-6">
+                            <i data-lucide="award" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Jyotish Acharya</h3>
+                        <p class="text-brand-textLightSoft leading-relaxed">
+                            She also earned the prestigious title of Jyotish Acharya, demonstrating advanced knowledge and professional excellence in Astrology.
+                        </p>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="bg-white/5 border border-brand-purple/20 p-8 rounded-2xl shadow-glow hover:bg-white/10 transition-colors">
+                        <div class="w-12 h-12 rounded-xl bg-brand-purple/20 text-brand-purpleSoft flex items-center justify-center mb-6">
+                            <i data-lucide="book-open" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Astrology Research</h3>
+                        <p class="text-brand-textLightSoft leading-relaxed">
+                            In 2012, completed professional research in Astrology under the guidance of renowned astrologer K. N. Rao at Bhartiya Vidya Bhavan, Delhi. This significantly strengthened her practical understanding of authentic Vedic Astrology and predictive techniques.
+                        </p>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="bg-white/5 border border-brand-purple/20 p-8 rounded-2xl shadow-glow hover:bg-white/10 transition-colors">
+                        <div class="w-12 h-12 rounded-xl bg-brand-purple/20 text-brand-purpleSoft flex items-center justify-center mb-6">
+                            <i data-lucide="compass" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Advanced Research in Vedic Astrology & Vastu</h3>
+                        <p class="text-brand-textLightSoft leading-relaxed">
+                            She further pursued advanced research in Vedic Astrology and Vastu at Bhartiya Vaidic Jyotish Sansthanam, Banaras, enhancing her expertise in traditional Indian sciences and holistic consultation.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Areas of Expertise -->
+        <section class="py-16 md:py-24 bg-brand-cardSoft">
+            <div class="container mx-auto px-4 max-w-6xl">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-serif font-bold text-brand-textDark mb-4">
+                        Areas of <span class="text-brand-purple">Expertise</span>
+                    </h2>
+                    <p class="text-brand-textDarkSoft max-w-2xl mx-auto">
+                        Providing comprehensive spiritual and practical guidance across multiple mystical disciplines.
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-6 lg:gap-8">
+                    <!-- Expertise Cards -->
+                    <div class="bg-white shadow-soft border border-brand-purple/10 p-8 rounded-[2rem] hover:border-brand-purple/30 transition-all group">
+                        <h3 class="text-xl font-bold text-brand-textDark mb-3 flex items-center gap-3">
+                            <i data-lucide="moon" class="w-5 h-5 text-brand-purple"></i> Astrology
+                        </h3>
+                        <p class="text-brand-textDarkSoft leading-relaxed">
+                            Certified horoscope analysis using authentic Vedic calculations, traditional principles, multiple calculation methods, and intuitive guidance to provide accurate and personalized predictions.
+                        </p>
+                    </div>
+                    
+                    <div class="bg-white shadow-soft border border-brand-purple/10 p-8 rounded-[2rem] hover:border-brand-purple/30 transition-all group">
+                        <h3 class="text-xl font-bold text-brand-textDark mb-3 flex items-center gap-3">
+                            <i data-lucide="home" class="w-5 h-5 text-brand-purple"></i> Vastu Consultation
+                        </h3>
+                        <p class="text-brand-textDarkSoft leading-relaxed">
+                            Professional Vastu consultation for homes, offices, commercial spaces, and other properties based on authentic Vastu principles.
+                        </p>
+                    </div>
+
+                    <div class="bg-white shadow-soft border border-brand-purple/10 p-8 rounded-[2rem] hover:border-brand-purple/30 transition-all group">
+                        <h3 class="text-xl font-bold text-brand-textDark mb-3 flex items-center gap-3">
+                            <i data-lucide="layers" class="w-5 h-5 text-brand-purple"></i> Tarot Reading
+                        </h3>
+                        <p class="text-brand-textDarkSoft leading-relaxed">
+                            Ruchika has studied both traditional and advanced Tarot Reading techniques, enabling her to provide intuitive and insightful guidance tailored to each individual's life journey.
+                        </p>
+                    </div>
+
+                    <div class="bg-white shadow-soft border border-brand-purple/10 p-8 rounded-[2rem] hover:border-brand-purple/30 transition-all group">
+                        <h3 class="text-xl font-bold text-brand-textDark mb-3 flex items-center gap-3">
+                            <i data-lucide="hand" class="w-5 h-5 text-brand-purple"></i> Numerology & Palmistry
+                        </h3>
+                        <p class="text-brand-textDarkSoft leading-relaxed">
+                            Driven by a passion for continuous learning, Ruchika has developed expertise in Numerology and Palmistry through dedicated study and practice, helping clients better understand their personality, strengths, opportunities, and life path.
+                        </p>
+                    </div>
+
+                    <div class="bg-white shadow-soft border border-brand-purple/10 p-8 rounded-[2rem] hover:border-brand-purple/30 transition-all group">
+                        <h3 class="text-xl font-bold text-brand-textDark mb-3 flex items-center gap-3">
+                            <i data-lucide="sparkles" class="w-5 h-5 text-brand-purple"></i> Reiki Healing
+                        </h3>
+                        <p class="text-brand-textDarkSoft leading-relaxed">
+                            Ruchika completed Reiki Levels I, II, III, and Reiki Mastership in 2006 under the guidance of her parents and Reiki Guru in Mumbai. She integrates Reiki principles to promote emotional balance, positivity, inner peace, and holistic well-being.
+                        </p>
+                    </div>
+
+                    <div class="bg-white shadow-soft border border-brand-purple/10 p-8 rounded-[2rem] hover:border-brand-purple/30 transition-all group">
+                        <h3 class="text-xl font-bold text-brand-textDark mb-3 flex items-center gap-3">
+                            <i data-lucide="heart" class="w-5 h-5 text-brand-purple"></i> Life Coaching
+                        </h3>
+                        <p class="text-brand-textDarkSoft leading-relaxed">
+                            Ruchika Gupta is a professional Life Coach dedicated to helping individuals gain clarity, confidence, and direction through personalized guidance. By combining practical coaching, intuition, astrology, and spiritual wisdom, she empowers people to overcome challenges, make confident decisions, and achieve meaningful personal growth.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Authentic Vedic Remedies -->
+        <section class="py-16 md:py-24 bg-contact text-white">
+            <div class="container mx-auto px-4 max-w-6xl">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="space-y-6">
+                        <h2 class="text-3xl md:text-5xl font-serif font-bold leading-tight">
+                            Authentic Vedic <span class="text-brand-gold">Remedies</span>
+                        </h2>
+                        <p class="text-lg text-brand-textLightSoft leading-relaxed">
+                            All remedies are recommended using authentic Vedic principles supported by logical and practical reasoning.
+                        </p>
+                        
+                        <div class="space-y-4 mt-6">
+                            <div class="flex items-start gap-4">
+                                <i data-lucide="check-circle-2" class="w-6 h-6 text-brand-gold mt-1"></i>
+                                <p class="text-brand-textLightSoft text-lg">Personalized for each individual</p>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <i data-lucide="check-circle-2" class="w-6 h-6 text-brand-gold mt-1"></i>
+                                <p class="text-brand-textLightSoft text-lg">Based on authentic Vedic knowledge</p>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <i data-lucide="check-circle-2" class="w-6 h-6 text-brand-gold mt-1"></i>
+                                <p class="text-brand-textLightSoft text-lg">Easy to understand and follow</p>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <i data-lucide="check-circle-2" class="w-6 h-6 text-brand-gold mt-1"></i>
+                                <p class="text-brand-textLightSoft text-lg">Suggested according to the individual's beliefs and religious traditions</p>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <i data-lucide="check-circle-2" class="w-6 h-6 text-brand-gold mt-1"></i>
+                                <p class="text-brand-textLightSoft text-lg">Practical, meaningful, and result-oriented</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="relative rounded-[2rem] overflow-hidden shadow-glow border border-brand-purple/20 p-2 bg-white/5 backdrop-blur-sm">
+                        <img src="https://raspy-bronze-j86vijdt.edgeone.app/file_00000000f7e871fa89838d1d5173300b.png" alt="Vedic Remedies" class="w-full h-auto object-cover aspect-[4/5] object-top rounded-[1.5rem]" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Professional Journey Timeline -->
+        <section class="py-16 md:py-24 bg-brand-light">
+            <div class="container mx-auto px-4 max-w-6xl">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-serif font-bold text-brand-textDark mb-4">
+                        Professional <span class="text-brand-purple">Journey</span>
+                    </h2>
+                </div>
+
+                <div class="relative max-w-5xl mx-auto">
+                    <div class="timeline-line"></div>
+                    
+                    <div class="flex flex-col md:flex-row gap-8 justify-between relative z-10">
+                        <!-- Step 1 -->
+                        <div class="flex-1 flex md:flex-col items-start gap-6 md:gap-4 group">
+                            <div class="w-10 h-10 md:w-12 md:h-12 rounded-full btn-primary flex items-center justify-center shrink-0 border-4 border-brand-light group-hover:scale-110 transition-transform">
+                                <span class="text-white font-bold text-sm">06</span>
+                            </div>
+                            <div class="bg-white p-6 rounded-2xl shadow-sm border border-brand-purple/10 flex-1">
+                                <h4 class="font-bold text-brand-purple mb-2">2006</h4>
+                                <p class="text-brand-textDarkSoft text-sm leading-relaxed">Completed Reiki Levels I, II, III, and Reiki Mastership.</p>
+                            </div>
+                        </div>
+
+                        <!-- Step 2 -->
+                        <div class="flex-1 flex md:flex-col items-start gap-6 md:gap-4 group">
+                            <div class="w-10 h-10 md:w-12 md:h-12 rounded-full btn-primary flex items-center justify-center shrink-0 border-4 border-brand-light group-hover:scale-110 transition-transform">
+                                <span class="text-white font-bold text-sm">12</span>
+                            </div>
+                            <div class="bg-white p-6 rounded-2xl shadow-sm border border-brand-purple/10 flex-1">
+                                <h4 class="font-bold text-brand-purple mb-2">2012</h4>
+                                <p class="text-brand-textDarkSoft text-sm leading-relaxed">Completed professional Astrology Research at Bhartiya Vidya Bhavan, Delhi.</p>
+                            </div>
+                        </div>
+
+                        <!-- Step 3 -->
+                        <div class="flex-1 flex md:flex-col items-start gap-6 md:gap-4 group">
+                            <div class="w-10 h-10 md:w-12 md:h-12 rounded-full btn-primary flex items-center justify-center shrink-0 border-4 border-brand-light group-hover:scale-110 transition-transform">
+                                <i data-lucide="book" class="w-4 h-4 text-white"></i>
+                            </div>
+                            <div class="bg-white p-6 rounded-2xl shadow-sm border border-brand-purple/10 flex-1">
+                                <h4 class="font-bold text-brand-purple mb-2">Advanced Studies</h4>
+                                <p class="text-brand-textDarkSoft text-sm leading-relaxed">Completed advanced research in Vedic Astrology and Vastu from Bhartiya Vaidic Jyotish Sansthanam, Banaras.</p>
+                            </div>
+                        </div>
+
+                        <!-- Step 4 -->
+                        <div class="flex-1 flex md:flex-col items-start gap-6 md:gap-4 group">
+                            <div class="w-10 h-10 md:w-12 md:h-12 rounded-full btn-primary flex items-center justify-center shrink-0 border-4 border-brand-light group-hover:scale-110 transition-transform">
+                                <i data-lucide="star" class="w-4 h-4 text-white"></i>
+                            </div>
+                            <div class="bg-white p-6 rounded-2xl shadow-sm border border-brand-purple/10 flex-1">
+                                <h4 class="font-bold text-brand-purple mb-2">Today</h4>
+                                <p class="text-brand-textDarkSoft text-sm leading-relaxed">Helping individuals worldwide through Astrology, Vastu, Tarot, Numerology, Palmistry, Reiki, and Life Coaching.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Dr Ruchika -->
+        <section class="py-16 md:py-24 bg-brand-cardSoft">
+            <div class="container mx-auto px-4 max-w-6xl">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-serif font-bold text-brand-textDark mb-4">
+                        Why Choose <span class="text-brand-purple">Dr. Ruchika Gupta</span>
+                    </h2>
+                </div>
+
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-brand-purple/5 text-center flex flex-col items-center gap-3 hover:-translate-y-1 transition-transform">
+                        <div class="w-12 h-12 rounded-full bg-brand-purple/10 text-brand-purple flex items-center justify-center"><i data-lucide="book-open"></i></div>
+                        <h4 class="font-bold text-brand-textDark text-sm">Authentic Vedic Knowledge</h4>
+                    </div>
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-brand-purple/5 text-center flex flex-col items-center gap-3 hover:-translate-y-1 transition-transform">
+                        <div class="w-12 h-12 rounded-full bg-brand-purple/10 text-brand-purple flex items-center justify-center"><i data-lucide="search"></i></div>
+                        <h4 class="font-bold text-brand-textDark text-sm">Research-Based Astrology</h4>
+                    </div>
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-brand-purple/5 text-center flex flex-col items-center gap-3 hover:-translate-y-1 transition-transform">
+                        <div class="w-12 h-12 rounded-full bg-brand-purple/10 text-brand-purple flex items-center justify-center"><i data-lucide="user"></i></div>
+                        <h4 class="font-bold text-brand-textDark text-sm">Personalized Guidance</h4>
+                    </div>
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-brand-purple/5 text-center flex flex-col items-center gap-3 hover:-translate-y-1 transition-transform">
+                        <div class="w-12 h-12 rounded-full bg-brand-purple/10 text-brand-purple flex items-center justify-center"><i data-lucide="check-circle"></i></div>
+                        <h4 class="font-bold text-brand-textDark text-sm">Practical Solutions</h4>
+                    </div>
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-brand-purple/5 text-center flex flex-col items-center gap-3 hover:-translate-y-1 transition-transform">
+                        <div class="w-12 h-12 rounded-full bg-brand-purple/10 text-brand-purple flex items-center justify-center"><i data-lucide="sun"></i></div>
+                        <h4 class="font-bold text-brand-textDark text-sm">Holistic Spiritual Approach</h4>
+                    </div>
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-brand-purple/5 text-center flex flex-col items-center gap-3 hover:-translate-y-1 transition-transform">
+                        <div class="w-12 h-12 rounded-full bg-brand-purple/10 text-brand-purple flex items-center justify-center"><i data-lucide="eye"></i></div>
+                        <h4 class="font-bold text-brand-textDark text-sm">Intuitive Insights</h4>
+                    </div>
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-brand-purple/5 text-center flex flex-col items-center gap-3 hover:-translate-y-1 transition-transform">
+                        <div class="w-12 h-12 rounded-full bg-brand-purple/10 text-brand-purple flex items-center justify-center"><i data-lucide="graduation-cap"></i></div>
+                        <h4 class="font-bold text-brand-textDark text-sm">Continuous Learning & Research</h4>
+                    </div>
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-brand-purple/5 text-center flex flex-col items-center gap-3 hover:-translate-y-1 transition-transform">
+                        <div class="w-12 h-12 rounded-full bg-brand-purple/10 text-brand-purple flex items-center justify-center"><i data-lucide="shield"></i></div>
+                        <h4 class="font-bold text-brand-textDark text-sm">Trusted & Confidential</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Book Consultation CTA -->
+        <section class="py-20 bg-hero text-white text-center relative overflow-hidden">
+            <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(123,63,242,0.2)_0%,transparent_70%)] pointer-events-none"></div>
+            <div class="container mx-auto px-4 max-w-4xl relative z-10">
+                <h2 class="text-3xl md:text-5xl font-serif font-bold mb-6">
+                    Begin Your Journey Towards <br/> <span class="text-brand-gold">Clarity & Confidence</span>
+                </h2>
+                <p class="text-brand-textLightSoft text-lg md:text-xl leading-relaxed mb-10 max-w-3xl mx-auto">
+                    Whether you seek guidance in career, relationships, family, marriage, business, health, finances, or personal growth, Dr. Ruchika Gupta provides personalized consultations rooted in authentic Vedic wisdom, extensive research, and years of practical experience.
+                </p>
+                <div class="flex flex-col sm:flex-row w-full sm:w-auto gap-4 justify-center">
+                    <a href="https://wa.me/919958031356?text=Hi%20Dr.%20Ruchika,%20I%20want%20to%20book%20a%20consultation." target="_blank" class="w-full sm:w-64 py-4 rounded-xl btn-primary font-bold text-lg flex items-center justify-center gap-2">
+                        <i data-lucide="calendar" class="w-5 h-5"></i> Book Consultation
+                    </a>
+                    <a href="tel:+919958031356" class="w-full sm:w-64 py-4 rounded-xl bg-transparent border border-brand-purpleSoft text-brand-textLight hover:bg-brand-purple/20 transition-all flex items-center justify-center gap-2 font-bold text-lg">
+                        <i data-lucide="phone" class="w-5 h-5"></i> Talk to Dr. Ruchika
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- VIEW: PACKAGES PAGE (Dedicated Page) -->
+    <main id="view-packages" class="hidden pt-28 pb-16 animate-[fadeIn_0.5s_ease-out]">
+        <!-- 4.5 CONSULTATION PACKAGES SECTION -->
+        <section id="packages-section" class="py-16 md:py-24 bg-brand-light border-y border-brand-purple/10">
+            <div class="container mx-auto px-4 max-w-7xl">
+                
+                <!-- Header -->
+                <div class="text-center mb-16">
+                    <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-brand-purple/10 border border-brand-purple/20 text-brand-purple font-semibold text-sm mb-4 shadow-sm">
+                        <i data-lucide="tag" class="w-4 h-4"></i> Starting from ₹1,100
+                    </div>
+                    <h2 class="text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-brand-textDark mb-6">
+                        Consultation <span class="text-brand-purple">Packages</span>
+                    </h2>
+                    <p class="text-brand-textDarkSoft max-w-3xl mx-auto text-base md:text-lg leading-relaxed">
+                        Choose the consultation that best suits your needs. Every session is personalized to provide meaningful guidance, practical insights, and authentic Vedic wisdom tailored to your unique situation.
+                    </p>
+                </div>
+
+                <!-- Packages Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 items-stretch">
+                    
+                    <!-- Card 1: Essential Astrology -->
+                    <div class="bg-white rounded-3xl p-6 lg:p-8 shadow-soft border border-brand-purple/10 hover:border-brand-purple/30 hover:shadow-card hover:-translate-y-1 transition-all duration-300 flex flex-col group">
+                        <h3 class="text-2xl font-serif font-bold text-brand-textDark mb-3">Essential Astrology Consultation</h3>
+                        <p class="text-brand-textDarkSoft text-sm mb-6 min-h-[3rem]">Perfect for quick guidance on one important life concern.</p>
+                        
+                        <div class="mb-6 border-t border-brand-purple/10 pt-6 flex-1">
+                            <span class="text-xs font-bold uppercase tracking-wider text-brand-purple mb-4 block">Includes</span>
+                            <ul class="space-y-3">
+                                <li class="flex items-start gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-brand-purple shrink-0 mt-0.5"></i> <span class="text-brand-textDark text-sm">One detailed question answered</span></li>
+                                <li class="flex items-start gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-brand-purple shrink-0 mt-0.5"></i> <span class="text-brand-textDark text-sm">Personalized horoscope analysis</span></li>
+                                <li class="flex items-start gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-brand-purple shrink-0 mt-0.5"></i> <span class="text-brand-textDark text-sm">Practical Vedic remedies</span></li>
+                                <li class="flex items-start gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-brand-purple shrink-0 mt-0.5"></i> <span class="text-brand-textDark text-sm">Clear and actionable guidance</span></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="mt-auto border-t border-brand-purple/10 pt-6">
+                            <div class="flex justify-between items-end mb-6">
+                                <div>
+                                    <span class="block text-xs font-semibold text-brand-textDarkSoft mb-1 uppercase tracking-wider">Duration</span>
+                                    <span class="block text-sm font-bold text-brand-textDark bg-brand-purple/5 px-2 py-1 rounded-md border border-brand-purple/10">45 Minutes</span>
+                                </div>
+                                <div class="text-right">
+                                    <span class="block text-xs font-semibold text-brand-textDarkSoft mb-1 uppercase tracking-wider">Fee</span>
+                                    <span class="block text-2xl font-bold text-brand-purple">₹1,100</span>
+                                </div>
+                            </div>
+                            <a href="https://wa.me/919958031356?text=Hi%20Dr.%20Ruchika,%20I%20want%20to%20book%20the%20Essential%20Astrology%20Consultation%20(Fee:%20%E2%82%B91,100,%20Duration:%2045%20Minutes).%20Please%20provide%20further%20details." target="_blank" class="w-full py-3.5 rounded-xl border-2 border-brand-purple text-brand-purple font-bold text-base flex justify-center items-center gap-2 hover:bg-brand-purple hover:text-white transition-all shadow-sm">
+                                Book Now
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Card 2: Comprehensive Astrology -->
+                    <div class="bg-white rounded-3xl p-6 lg:p-8 shadow-soft border border-brand-purple/10 hover:border-brand-purple/30 hover:shadow-card hover:-translate-y-1 transition-all duration-300 flex flex-col group">
+                        <h3 class="text-2xl font-serif font-bold text-brand-textDark mb-3">Comprehensive Astrology Consultation</h3>
+                        <p class="text-brand-textDarkSoft text-sm mb-6 min-h-[3rem]">Ideal for those seeking deeper clarity on multiple areas of life.</p>
+                        
+                        <div class="mb-6 border-t border-brand-purple/10 pt-6 flex-1">
+                            <span class="text-xs font-bold uppercase tracking-wider text-brand-purple mb-4 block">Includes</span>
+                            <ul class="space-y-3">
+                                <li class="flex items-start gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-brand-purple shrink-0 mt-0.5"></i> <span class="text-brand-textDark text-sm">Answers to up to 3 questions</span></li>
+                                <li class="flex items-start gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-brand-purple shrink-0 mt-0.5"></i> <span class="text-brand-textDark text-sm">Detailed horoscope analysis</span></li>
+                                <li class="flex items-start gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-brand-purple shrink-0 mt-0.5"></i> <span class="text-brand-textDark text-sm">Assessment of planetary strengths and challenges</span></li>
+                                <li class="flex items-start gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-brand-purple shrink-0 mt-0.5"></i> <span class="text-brand-textDark text-sm">Personalized Vedic remedies</span></li>
+                                <li class="flex items-start gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-brand-purple shrink-0 mt-0.5"></i> <span class="text-brand-textDark text-sm">Practical guidance for informed decision-making</span></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="mt-auto border-t border-brand-purple/10 pt-6">
+                            <div class="flex justify-between items-end mb-6">
+                                <div>
+                                    <span class="block text-xs font-semibold text-brand-textDarkSoft mb-1 uppercase tracking-wider">Duration</span>
+                                    <span class="block text-sm font-bold text-brand-textDark bg-brand-purple/5 px-2 py-1 rounded-md border border-brand-purple/10">45 Minutes</span>
+                                </div>
+                                <div class="text-right">
+                                    <span class="block text-xs font-semibold text-brand-textDarkSoft mb-1 uppercase tracking-wider">Fee</span>
+                                    <span class="block text-2xl font-bold text-brand-purple">₹2,100</span>
+                                </div>
+                            </div>
+                            <a href="https://wa.me/919958031356?text=Hi%20Dr.%20Ruchika,%20I%20want%20to%20book%20the%20Comprehensive%20Astrology%20Consultation%20(Fee:%20%E2%82%B92,100,%20Duration:%2045%20Minutes).%20Please%20provide%20further%20details." target="_blank" class="w-full py-3.5 rounded-xl border-2 border-brand-purple text-brand-purple font-bold text-base flex justify-center items-center gap-2 hover:bg-brand-purple hover:text-white transition-all shadow-sm">
+                                Book Now
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Card 3: Kundli Matching -->
+                    <div class="bg-white rounded-3xl p-6 lg:p-8 shadow-soft border border-brand-purple/10 hover:border-brand-purple/30 hover:shadow-card hover:-translate-y-1 transition-all duration-300 flex flex-col group">
+                        <h3 class="text-2xl font-serif font-bold text-brand-textDark mb-3">Kundli Matching <br/><span class="text-lg text-brand-textDarkSoft font-sans font-medium">(Matchmaking)</span></h3>
+                        <p class="text-brand-textDarkSoft text-sm mb-6 min-h-[3rem]">A detailed compatibility analysis for marriage and long-term relationships.</p>
+                        
+                        <div class="mb-6 border-t border-brand-purple/10 pt-6 flex-1">
+                            <span class="text-xs font-bold uppercase tracking-wider text-brand-purple mb-4 block">Includes</span>
+                            <ul class="space-y-3">
+                                <li class="flex items-start gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-brand-purple shrink-0 mt-0.5"></i> <span class="text-brand-textDark text-sm">Horoscope matching based on Vedic principles</span></li>
+                                <li class="flex items-start gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-brand-purple shrink-0 mt-0.5"></i> <span class="text-brand-textDark text-sm">Compatibility analysis</span></li>
+                                <li class="flex items-start gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-brand-purple shrink-0 mt-0.5"></i> <span class="text-brand-textDark text-sm">Assessment of strengths and challenges</span></li>
+                                <li class="flex items-start gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-brand-purple shrink-0 mt-0.5"></i> <span class="text-brand-textDark text-sm">Personalized recommendations and guidance</span></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="mt-auto border-t border-brand-purple/10 pt-6">
+                            <div class="flex justify-between items-end mb-6">
+                                <div>
+                                    <span class="block text-xs font-semibold text-brand-textDarkSoft mb-1 uppercase tracking-wider">Duration</span>
+                                    <span class="block text-sm font-bold text-brand-textDark bg-brand-purple/5 px-2 py-1 rounded-md border border-brand-purple/10">45 Minutes</span>
+                                </div>
+                                <div class="text-right">
+                                    <span class="block text-xs font-semibold text-brand-textDarkSoft mb-1 uppercase tracking-wider">Fee</span>
+                                    <span class="block text-2xl font-bold text-brand-purple">₹1,100</span>
+                                </div>
+                            </div>
+                            <a href="https://wa.me/919958031356?text=Hi%20Dr.%20Ruchika,%20I%20want%20to%20book%20the%20Kundli%20Matching%20Consultation%20(Fee:%20%E2%82%B91,100,%20Duration:%2045%20Minutes).%20Please%20provide%20further%20details." target="_blank" class="w-full py-3.5 rounded-xl border-2 border-brand-purple text-brand-purple font-bold text-base flex justify-center items-center gap-2 hover:bg-brand-purple hover:text-white transition-all shadow-sm">
+                                Book Now
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Card 4: Career Consultation -->
+                    <div class="bg-white rounded-3xl p-6 lg:p-8 shadow-soft border border-brand-purple/10 hover:border-brand-purple/30 hover:shadow-card hover:-translate-y-1 transition-all duration-300 flex flex-col group">
+                        <h3 class="text-2xl font-serif font-bold text-brand-textDark mb-3">Career Consultation</h3>
+                        <p class="text-brand-textDarkSoft text-sm mb-6 min-h-[3rem]">Discover the career path best aligned with your horoscope and strengths.</p>
+                        
+                        <div class="mb-6 border-t border-brand-purple/10 pt-6 flex-1">
+                            <span class="text-xs font-bold uppercase tracking-wider text-brand-purple mb-4 block">Includes</span>
+                            <ul class="space-y-3">
+                                <li class="flex items-start gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-brand-purple shrink-0 mt-0.5"></i> <span class="text-brand-textDark text-sm">Career-focused horoscope analysis</span></li>
+                                <li class="flex items-start gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-brand-purple shrink-0 mt-0.5"></i> <span class="text-brand-textDark text-sm">Varga Chart evaluation</span></li>
+                                <li class="flex items-start gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-brand-purple shrink-0 mt-0.5"></i> <span class="text-brand-textDark text-sm">Planetary strength assessment</span></li>
+                                <li class="flex items-start gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-brand-purple shrink-0 mt-0.5"></i> <span class="text-brand-textDark text-sm">Dasha (Planetary Period) analysis</span></li>
+                                <li class="flex items-start gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-brand-purple shrink-0 mt-0.5"></i> <span class="text-brand-textDark text-sm">Personalized career guidance</span></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="mt-auto border-t border-brand-purple/10 pt-6">
+                            <div class="flex justify-between items-end mb-6">
+                                <div>
+                                    <span class="block text-xs font-semibold text-brand-textDarkSoft mb-1 uppercase tracking-wider">Duration</span>
+                                    <span class="block text-sm font-bold text-brand-textDark bg-brand-purple/5 px-2 py-1 rounded-md border border-brand-purple/10">45 Minutes</span>
+                                </div>
+                                <div class="text-right">
+                                    <span class="block text-xs font-semibold text-brand-textDarkSoft mb-1 uppercase tracking-wider">Fee</span>
+                                    <span class="block text-2xl font-bold text-brand-purple">₹2,100</span>
+                                </div>
+                            </div>
+                            <a href="https://wa.me/919958031356?text=Hi%20Dr.%20Ruchika,%20I%20want%20to%20book%20the%20Career%20Consultation%20(Fee:%20%E2%82%B92,100,%20Duration:%2045%20Minutes).%20Please%20provide%20further%20details." target="_blank" class="w-full py-3.5 rounded-xl border-2 border-brand-purple text-brand-purple font-bold text-base flex justify-center items-center gap-2 hover:bg-brand-purple hover:text-white transition-all shadow-sm">
+                                Book Now
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Card 5: Tarot Consultation -->
+                    <div class="bg-white rounded-3xl p-6 lg:p-8 shadow-soft border border-brand-purple/10 hover:border-brand-purple/30 hover:shadow-card hover:-translate-y-1 transition-all duration-300 flex flex-col group">
+                        <h3 class="text-2xl font-serif font-bold text-brand-textDark mb-3">Tarot Consultation</h3>
+                        <p class="text-brand-textDarkSoft text-sm mb-6 min-h-[3rem]">Receive intuitive guidance and clarity for your current situation.</p>
+                        
+                        <div class="mb-6 border-t border-brand-purple/10 pt-6 flex-1">
+                            <span class="text-xs font-bold uppercase tracking-wider text-brand-purple mb-4 block">Includes</span>
+                            <ul class="space-y-3">
+                                <li class="flex items-start gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-brand-purple shrink-0 mt-0.5"></i> <span class="text-brand-textDark text-sm">Answers to up to 3 questions</span></li>
+                                <li class="flex items-start gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-brand-purple shrink-0 mt-0.5"></i> <span class="text-brand-textDark text-sm">Advanced Tarot reading</span></li>
+                                <li class="flex items-start gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-brand-purple shrink-0 mt-0.5"></i> <span class="text-brand-textDark text-sm">Personalized guidance</span></li>
+                                <li class="flex items-start gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-brand-purple shrink-0 mt-0.5"></i> <span class="text-brand-textDark text-sm">Practical remedies and positive direction</span></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="mt-auto border-t border-brand-purple/10 pt-6">
+                            <div class="flex justify-between items-end mb-6">
+                                <div>
+                                    <span class="block text-xs font-semibold text-brand-textDarkSoft mb-1 uppercase tracking-wider">Duration</span>
+                                    <span class="block text-sm font-bold text-brand-textDark bg-brand-purple/5 px-2 py-1 rounded-md border border-brand-purple/10">30 Minutes</span>
+                                </div>
+                                <div class="text-right">
+                                    <span class="block text-xs font-semibold text-brand-textDarkSoft mb-1 uppercase tracking-wider">Fee</span>
+                                    <span class="block text-2xl font-bold text-brand-purple">₹1,100</span>
+                                </div>
+                            </div>
+                            <a href="https://wa.me/919958031356?text=Hi%20Dr.%20Ruchika,%20I%20want%20to%20book%20the%20Tarot%20Consultation%20(Fee:%20%E2%82%B91,100,%20Duration:%2030%20Minutes).%20Please%20provide%20further%20details." target="_blank" class="w-full py-3.5 rounded-xl border-2 border-brand-purple text-brand-purple font-bold text-base flex justify-center items-center gap-2 hover:bg-brand-purple hover:text-white transition-all shadow-sm">
+                                Book Now
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Card 6: Numerology Consultation -->
+                    <div class="bg-white rounded-3xl p-6 lg:p-8 shadow-soft border border-brand-purple/10 hover:border-brand-purple/30 hover:shadow-card hover:-translate-y-1 transition-all duration-300 flex flex-col group">
+                        <h3 class="text-2xl font-serif font-bold text-brand-textDark mb-3">Numerology Consultation</h3>
+                        <p class="text-brand-textDarkSoft text-sm mb-6 min-h-[3rem]">Gain insights through the power of numbers.</p>
+                        
+                        <div class="mb-6 border-t border-brand-purple/10 pt-6 flex-1">
+                            <span class="text-xs font-bold uppercase tracking-wider text-brand-purple mb-4 block">Includes</span>
+                            <ul class="space-y-3">
+                                <li class="flex items-start gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-brand-purple shrink-0 mt-0.5"></i> <span class="text-brand-textDark text-sm">Answer to one important question</span></li>
+                                <li class="flex items-start gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-brand-purple shrink-0 mt-0.5"></i> <span class="text-brand-textDark text-sm">Personal numerology analysis</span></li>
+                                <li class="flex items-start gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-brand-purple shrink-0 mt-0.5"></i> <span class="text-brand-textDark text-sm">Lucky number</span></li>
+                                <li class="flex items-start gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-brand-purple shrink-0 mt-0.5"></i> <span class="text-brand-textDark text-sm">Lucky color</span></li>
+                                <li class="flex items-start gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-brand-purple shrink-0 mt-0.5"></i> <span class="text-brand-textDark text-sm">Suitable gemstone or crystal recommendations</span></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="mt-auto border-t border-brand-purple/10 pt-6">
+                            <div class="flex justify-between items-end mb-6">
+                                <div>
+                                    <span class="block text-xs font-semibold text-brand-textDarkSoft mb-1 uppercase tracking-wider">Duration</span>
+                                    <span class="block text-sm font-bold text-brand-textDark bg-brand-purple/5 px-2 py-1 rounded-md border border-brand-purple/10">30 Minutes</span>
+                                </div>
+                                <div class="text-right">
+                                    <span class="block text-xs font-semibold text-brand-textDarkSoft mb-1 uppercase tracking-wider">Fee</span>
+                                    <span class="block text-2xl font-bold text-brand-purple">₹1,100</span>
+                                </div>
+                            </div>
+                            <a href="https://wa.me/919958031356?text=Hi%20Dr.%20Ruchika,%20I%20want%20to%20book%20the%20Numerology%20Consultation%20(Fee:%20%E2%82%B91,100,%20Duration:%2030%20Minutes).%20Please%20provide%20further%20details." target="_blank" class="w-full py-3.5 rounded-xl border-2 border-brand-purple text-brand-purple font-bold text-base flex justify-center items-center gap-2 hover:bg-brand-purple hover:text-white transition-all shadow-sm">
+                                Book Now
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Card 7: Premium Guidance Package (FEATURED) -->
+                    <div class="bg-contact rounded-3xl p-6 lg:p-8 shadow-glow border border-brand-purple/40 hover:-translate-y-1 transition-all duration-300 flex flex-col relative overflow-hidden text-white lg:scale-105 z-10">
+                        <div class="absolute top-0 right-0 bg-brand-gold text-brand-cosmic text-xs font-bold px-4 py-1.5 rounded-bl-xl z-20 shadow-sm">Most Popular</div>
+                        <!-- Inner Glow effect -->
+                        <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(123,63,242,0.4)_0%,transparent_70%)] pointer-events-none"></div>
+
+                        <div class="relative z-10 flex flex-col h-full">
+                            <h3 class="text-2xl font-serif font-bold text-brand-gold mb-3">Premium Guidance Package</h3>
+                            <p class="text-brand-textLightSoft text-sm mb-6 min-h-[3rem]">An all-inclusive, holistic consultation for complete life clarity.</p>
+                            
+                            <div class="mb-6 border-t border-brand-purple/20 pt-6 flex-1">
+                                <span class="text-xs font-bold uppercase tracking-wider text-brand-purpleSoft mb-4 block">Includes</span>
+                                <ul class="space-y-3">
+                                    <li class="flex items-start gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-brand-gold shrink-0 mt-0.5"></i> <span class="text-white text-sm font-medium">Detailed Astrology consultation</span></li>
+                                    <li class="flex items-start gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-brand-gold shrink-0 mt-0.5"></i> <span class="text-white text-sm font-medium">Advanced Tarot reading</span></li>
+                                    <li class="flex items-start gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-brand-gold shrink-0 mt-0.5"></i> <span class="text-white text-sm font-medium">Personal Numerology analysis</span></li>
+                                    <li class="flex items-start gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-brand-gold shrink-0 mt-0.5"></i> <span class="text-white text-sm font-medium">Answers to up to 3 questions</span></li>
+                                    <li class="flex items-start gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-brand-gold shrink-0 mt-0.5"></i> <span class="text-white text-sm font-medium">Lucky number, color & gemstone recs.</span></li>
+                                    <li class="flex items-start gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-brand-gold shrink-0 mt-0.5"></i> <span class="text-white text-sm font-medium">Personalized remedies & practical guidance</span></li>
+                                </ul>
+                            </div>
+                            
+                            <div class="mt-auto border-t border-brand-purple/20 pt-6">
+                                <div class="flex justify-between items-end mb-6">
+                                    <div>
+                                        <span class="block text-xs font-semibold text-brand-textLightSoft mb-1 uppercase tracking-wider">Duration</span>
+                                        <span class="block text-sm font-bold text-white bg-white/10 px-2 py-1 rounded-md border border-white/10">45 Minutes</span>
+                                    </div>
+                                    <div class="text-right">
+                                        <span class="block text-xs font-semibold text-brand-textLightSoft mb-1 uppercase tracking-wider">Fee</span>
+                                        <span class="block text-2xl font-bold text-brand-gold">₹5,100</span>
+                                    </div>
+                                </div>
+                                <a href="https://wa.me/919958031356?text=Hi%20Dr.%20Ruchika,%20I%20want%20to%20book%20the%20Premium%20Guidance%20Package%20(Fee:%20%E2%82%B95,100,%20Duration:%2045%20Minutes).%20Please%20provide%20further%20details." target="_blank" class="w-full py-3.5 rounded-xl font-bold text-base flex justify-center items-center gap-2 bg-brand-gold text-brand-cosmic hover:bg-brand-goldSoft hover:shadow-lg transition-all shadow-sm">
+                                    Book Now
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 8: Video Consultation -->
+                    <div class="bg-white rounded-3xl p-6 lg:p-8 shadow-soft border border-brand-purple/10 hover:border-brand-purple/30 hover:shadow-card hover:-translate-y-1 transition-all duration-300 flex flex-col group">
+                        <h3 class="text-2xl font-serif font-bold text-brand-textDark mb-3">Video Consultation</h3>
+                        <p class="text-brand-textDarkSoft text-sm mb-6 min-h-[3rem]">One-on-one online consultation from the comfort of your home.</p>
+                        
+                        <div class="mb-6 border-t border-brand-purple/10 pt-6 flex-1">
+                            <span class="text-xs font-bold uppercase tracking-wider text-brand-purple mb-4 block">Includes</span>
+                            <ul class="space-y-3">
+                                <li class="flex items-start gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-brand-purple shrink-0 mt-0.5"></i> <span class="text-brand-textDark text-sm">Live consultation via Google Meet or Video Call</span></li>
+                                <li class="flex items-start gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-brand-purple shrink-0 mt-0.5"></i> <span class="text-brand-textDark text-sm">Answers to up to 3 questions</span></li>
+                                <li class="flex items-start gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-brand-purple shrink-0 mt-0.5"></i> <span class="text-brand-textDark text-sm">Detailed horoscope discussion</span></li>
+                                <li class="flex items-start gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-brand-purple shrink-0 mt-0.5"></i> <span class="text-brand-textDark text-sm">Personalized guidance and remedies</span></li>
+                                <li class="flex items-start gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-brand-purple shrink-0 mt-0.5"></i> <span class="text-brand-textDark text-sm">Interactive question-and-answer session</span></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="mt-auto border-t border-brand-purple/10 pt-6">
+                            <div class="flex justify-between items-end mb-6">
+                                <div>
+                                    <span class="block text-xs font-semibold text-brand-textDarkSoft mb-1 uppercase tracking-wider">Duration</span>
+                                    <span class="block text-sm font-bold text-brand-textDark bg-brand-purple/5 px-2 py-1 rounded-md border border-brand-purple/10">60 Minutes</span>
+                                </div>
+                                <div class="text-right">
+                                    <span class="block text-xs font-semibold text-brand-textDarkSoft mb-1 uppercase tracking-wider">Fee</span>
+                                    <span class="block text-2xl font-bold text-brand-purple">₹3,499</span>
+                                </div>
+                            </div>
+                            <a href="https://wa.me/919958031356?text=Hi%20Dr.%20Ruchika,%20I%20want%20to%20book%20the%20Video%20Consultation%20(Fee:%20%E2%82%B93,499,%20Duration:%2060%20Minutes).%20Please%20provide%20further%20details." target="_blank" class="w-full py-3.5 rounded-xl border-2 border-brand-purple text-brand-purple font-bold text-base flex justify-center items-center gap-2 hover:bg-brand-purple hover:text-white transition-all shadow-sm">
+                                Book Now
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Card 9: Life Coaching Session -->
+                    <div class="bg-white rounded-3xl p-6 lg:p-8 shadow-soft border border-brand-purple/10 hover:border-brand-purple/30 hover:shadow-card hover:-translate-y-1 transition-all duration-300 flex flex-col group relative overflow-hidden">
+                        <h3 class="text-2xl font-serif font-bold text-brand-textDark mb-3">Life Coaching Session</h3>
+                        <p class="text-brand-textDarkSoft text-sm mb-6 min-h-[3rem]">Gain clarity, confidence, and practical guidance to navigate life's challenges with a positive mindset.</p>
+                        
+                        <!-- Clickable Student Offer Badge Inline -->
+                        <a href="https://wa.me/919958031356?text=Hi%20Dr.%20Ruchika,%20I%20want%20to%20book%20the%20Life%20Coaching%20Session%20Student%20Offer%20(Fee:%20%E2%82%B92,100,%20Duration:%2045%20Minutes).%20Please%20provide%20further%20details." target="_blank" class="mb-4 bg-brand-light border border-brand-purple/20 p-4 rounded-xl flex justify-between items-center shadow-sm hover:bg-brand-purple/5 hover:border-brand-purple/40 transition-colors cursor-pointer group/student">
+                            <span class="text-sm font-bold text-brand-purple flex items-center gap-2"><i data-lucide="graduation-cap" class="w-5 h-5"></i> Student Offer</span>
+                            <div class="flex items-center gap-3">
+                                <span class="text-xl font-bold text-brand-purple">₹2,100</span>
+                                <span class="bg-brand-purple text-white text-[10px] px-2 py-1 rounded font-bold uppercase tracking-wider group-hover/student:bg-brand-purple2 transition-colors">Book</span>
+                            </div>
+                        </a>
+
+                        <div class="mb-6 border-t border-brand-purple/10 pt-6 flex-1">
+                            <span class="text-xs font-bold uppercase tracking-wider text-brand-purple mb-4 block">Includes</span>
+                            <ul class="space-y-3">
+                                <li class="flex items-start gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-brand-purple shrink-0 mt-0.5"></i> <span class="text-brand-textDark text-sm">One-on-one personalized coaching</span></li>
+                                <li class="flex items-start gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-brand-purple shrink-0 mt-0.5"></i> <span class="text-brand-textDark text-sm">Goal and mindset assessment</span></li>
+                                <li class="flex items-start gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-brand-purple shrink-0 mt-0.5"></i> <span class="text-brand-textDark text-sm">Guidance for personal, career, or emotional challenges</span></li>
+                                <li class="flex items-start gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-brand-purple shrink-0 mt-0.5"></i> <span class="text-brand-textDark text-sm">Confidence-building and motivational support</span></li>
+                                <li class="flex items-start gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-brand-purple shrink-0 mt-0.5"></i> <span class="text-brand-textDark text-sm">Actionable steps to help you move forward</span></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="mt-auto border-t border-brand-purple/10 pt-6">
+                            <div class="flex justify-between items-end mb-6">
+                                <div>
+                                    <span class="block text-xs font-semibold text-brand-textDarkSoft mb-1 uppercase tracking-wider">Duration</span>
+                                    <span class="block text-sm font-bold text-brand-textDark bg-brand-purple/5 px-2 py-1 rounded-md border border-brand-purple/10">45 Minutes</span>
+                                </div>
+                                <div class="text-right">
+                                    <span class="block text-xs font-semibold text-brand-textDarkSoft mb-1 uppercase tracking-wider">Standard Fee</span>
+                                    <span class="block text-2xl font-bold text-brand-textDark">₹5,100</span>
+                                </div>
+                            </div>
+                            <a href="https://wa.me/919958031356?text=Hi%20Dr.%20Ruchika,%20I%20want%20to%20book%20the%20Life%20Coaching%20Session%20(Fee:%20%E2%82%B95,100,%20Duration:%2045%20Minutes).%20Please%20provide%20further%20details." target="_blank" class="w-full py-3.5 rounded-xl border-2 border-brand-purple text-brand-purple font-bold text-base flex justify-center items-center gap-2 hover:bg-brand-purple hover:text-white transition-all shadow-sm">
+                                Book Now
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 11. FOOTER -->
+    <footer class="bg-brand-cosmic3 pt-16 pb-24 md:pb-8 text-brand-textLight">
+        <div class="container mx-auto px-4 max-w-6xl">
+            <div class="grid md:grid-cols-12 gap-8 mb-12 border-b border-white/10 pb-12">
+                
+                <div class="md:col-span-5 space-y-6">
+                    <h2 class="text-3xl font-serif font-bold text-white tracking-tight">
+                        Dr. Ruchika Gupta
+                    </h2>
+                    <p class="text-brand-textLightSoft text-sm leading-relaxed max-w-sm">
+                        Expert Astrologer — 23+ years of experience in Vedic astrology, providing accurate Kundali analysis, Vastu consultation, Tarot readings, and authentic spiritual remedies.
+                    </p>
+                    
+                    <!-- Updated Social / Contact Icons -->
+                    <div class="flex gap-4">
+                        <a href="https://wa.me/919958031356?text=Hi%20Dr.%20Ruchika%20Gupta%2C%20I%20visited%20on%20your%20website%20I%20need%20assistance." target="_blank" class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-brand-whatsapp hover:border-brand-whatsapp text-brand-textLightSoft hover:text-white transition-all shadow-sm">
+                            <i data-lucide="message-circle" class="w-5 h-5"></i>
+                        </a>
+                        <a href="mailto:therisingastrology@gmail.com" class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-brand-purple hover:border-brand-purple text-brand-textLightSoft hover:text-white transition-all shadow-sm">
+                            <i data-lucide="mail" class="w-5 h-5"></i>
+                        </a>
+                        <a href="https://www.instagram.com/ruchikaguptastro?igsh=MWd1MDFpM3Fjb3Jjag==" target="_blank" class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-brand-purple hover:border-brand-purple text-brand-textLightSoft hover:text-white transition-all shadow-sm">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+                            </svg>
+                        </a>
+                        <a href="https://www.facebook.com/share/1H7GrJfYKU/" target="_blank" class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-brand-purple hover:border-brand-purple text-brand-textLightSoft hover:text-white transition-all shadow-sm">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="md:col-span-3">
+                    <h4 class="font-bold mb-6 text-lg text-white">Our Services</h4>
+                    <ul class="space-y-4 text-brand-textLightSoft text-sm">
+                        <li><a href="#packages" onclick="navigateTo('view-packages'); window.scrollTo(0,0); return false;" class="hover:text-brand-gold transition-colors">Consultation Packages</a></li>
+                        <li><a href="#svc-astrology" onclick="navigateToHomeAndScroll('svc-astrology'); return false;" class="hover:text-brand-gold transition-colors">Kundali Vishleshan</a></li>
+                        <li><a href="#svc-vastu" onclick="navigateToHomeAndScroll('svc-vastu'); return false;" class="hover:text-brand-gold transition-colors">Vastu Consultation</a></li>
+                        <li><a href="#svc-tarot" onclick="navigateToHomeAndScroll('svc-tarot'); return false;" class="hover:text-brand-gold transition-colors">Tarot Reading</a></li>
+                        <li><a href="#svc-numerology" onclick="navigateToHomeAndScroll('svc-numerology'); return false;" class="hover:text-brand-gold transition-colors">Numerology</a></li>
+                        <li><a href="#svc-palmistry" onclick="navigateToHomeAndScroll('svc-palmistry'); return false;" class="hover:text-brand-gold transition-colors">Palmistry</a></li>
+                        <li><a href="#svc-reiki" onclick="navigateToHomeAndScroll('svc-reiki'); return false;" class="hover:text-brand-gold transition-colors">Reiki Healing</a></li>
+                        <li><a href="#svc-lifecoach" onclick="navigateToHomeAndScroll('svc-lifecoach'); return false;" class="hover:text-brand-gold transition-colors">Life Coach Counsellor</a></li>
+                    </ul>
+                </div>
+
+                <div class="md:col-span-4">
+                    <h4 class="font-bold mb-6 text-lg text-white">Shop by Category</h4>
+                    <ul class="space-y-4 text-brand-textLightSoft text-sm">
+                        <li><a href="#products" onclick="navigateToHomeAndScroll('products'); return false;" class="hover:text-brand-gold transition-colors flex items-center gap-2"><i data-lucide="search" class="w-4 h-4 text-brand-purpleSoft"></i> Rudraksha</a></li>
+                        <li><a href="#products" onclick="navigateToHomeAndScroll('products'); return false;" class="hover:text-brand-gold transition-colors flex items-center gap-2"><i data-lucide="gem" class="w-4 h-4 text-brand-purpleSoft"></i> Gemstones</a></li>
+                        <li><a href="#products" onclick="navigateToHomeAndScroll('products'); return false;" class="hover:text-brand-gold transition-colors flex items-center gap-2"><i data-lucide="moon" class="w-4 h-4 text-brand-purpleSoft"></i> Crystals</a></li>
+                        <li><a href="#products" onclick="navigateToHomeAndScroll('products'); return false;" class="hover:text-brand-gold transition-colors flex items-center gap-2"><i data-lucide="compass" class="w-4 h-4 text-brand-purpleSoft"></i> Vastu Products</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            
+            <div class="flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-brand-textLightSoft/60">
+                <p>&copy; <span id="year"></span> Dr. Ruchika Gupta. All rights reserved.</p>
+                <div class="flex gap-4">
+                    <a href="#" class="hover:text-brand-textLight">Privacy Policy</a>
+                    <a href="#" class="hover:text-brand-textLight">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- MOBILE BOTTOM NAVIGATION -->
+    <div class="md:hidden fixed bottom-0 left-0 w-full bg-[#15103A]/95 backdrop-blur-md border-t border-white/10 flex justify-around items-center py-2 px-4 z-40 pb-safe shadow-[0_-4px_30px_rgba(11,18,53,0.3)]">
+        <a href="#home" onclick="navigateTo('view-home'); window.scrollTo(0,0); return false;" class="flex flex-col items-center p-2 text-brand-purpleSoft">
+            <i data-lucide="home" class="w-5 h-5 mb-1"></i>
+            <span class="text-[10px] font-medium">Home</span>
+        </a>
+        <a href="#products" onclick="navigateToHomeAndScroll('products'); return false;" class="flex flex-col items-center p-2 text-brand-textLightSoft hover:text-brand-gold transition-colors">
+            <i data-lucide="shopping-bag" class="w-5 h-5 mb-1"></i>
+            <span class="text-[10px] font-medium">Products</span>
+        </a>
+        <a href="#packages" onclick="navigateTo('view-packages'); window.scrollTo(0,0); return false;" class="flex flex-col items-center p-2 text-brand-textLightSoft hover:text-brand-gold transition-colors">
+            <i data-lucide="calendar" class="w-5 h-5 mb-1"></i>
+            <span class="text-[10px] font-medium">Book</span>
+        </a>
+        <!-- Empty space for the floating WhatsApp button -->
+        <div class="w-12"></div>
+    </div>
+
+    <!-- FLOATING WHATSAPP BUTTON -->
+    <a href="https://wa.me/919958031356?text=Hi%20Dr.%20Ruchika,%20I%20need%20assistance." target="_blank" class="fixed bottom-4 md:bottom-6 right-4 md:right-6 bg-brand-whatsapp text-white p-4 rounded-full shadow-[0_8px_25px_rgba(37,211,102,0.4)] hover:bg-[#1EBE5D] hover:scale-105 transition-all z-50 flex items-center justify-center">
+        <i data-lucide="message-circle" class="w-8 h-8 fill-current text-brand-whatsapp hidden"></i>
+        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 0C5.385 0 0 5.385 0 12.031c0 2.115.548 4.17 1.593 5.986L0 24l6.14-1.606c1.764.957 3.754 1.464 5.891 1.464 6.646 0 12.031-5.385 12.031-12.031S18.677 0 12.031 0zm3.896 17.156c-.167.469-.968.906-1.396.947-.417.042-.906.136-2.916-.708-2.427-1.02-3.958-3.52-4.083-3.687-.125-.167-.979-1.292-.979-2.469 0-1.177.614-1.76.833-1.979.219-.219.469-.271.625-.271.156 0 .312 0 .448.01.146.01.344-.062.531.406.198.49.677 1.656.74 1.792.062.135.104.302.021.469-.083.167-.125.271-.25.406-.125.135-.26.292-.375.406-.125.125-.26.26-.115.51.146.25.646 1.073 1.375 1.708.937.823 1.76 1.094 2.01 1.229.25.135.396.115.542-.052.146-.167.625-.729.792-.979.167-.25.333-.208.562-.125.229.083 1.448.688 1.698.812.25.125.417.188.479.292.062.104.062.614-.104 1.083z"/></svg>
+    </a>
+
+    <!-- SERVICE / BADGE DETAILS MODAL POPUP -->
+    <div id="service-modal" class="fixed inset-0 z-[60] modal-inactive items-center justify-center bg-brand-cosmic/80 backdrop-blur-sm p-4">
+        <div id="service-modal-content" class="bg-brand-cardSoft border border-brand-purple/10 rounded-[2rem] w-full max-w-md p-6 md:p-8 transform transition-transform duration-300 relative shadow-card">
+            <button onclick="closeServiceModal()" class="absolute top-5 right-5 w-8 h-8 flex items-center justify-center rounded-full bg-white border border-brand-purple/10 text-brand-textDark hover:bg-brand-light transition-colors">
+                <i data-lucide="x" class="w-4 h-4"></i>
+            </button>
+            <div class="w-12 h-12 rounded-2xl bg-brand-purple/10 text-brand-purple flex items-center justify-center mb-5 border border-brand-purple/10">
+                <i data-lucide="sparkles" class="w-6 h-6"></i>
+            </div>
+            <h3 id="modal-title" class="text-2xl md:text-3xl font-serif font-bold text-brand-textDark mb-3">Service Title</h3>
+            <p id="modal-desc" class="text-brand-textDarkSoft leading-relaxed mb-8 text-sm md:text-base">Service description goes here...</p>
+            
+            <a id="modal-whatsapp-btn" href="#" target="_blank" class="w-full py-3.5 btn-primary rounded-xl font-bold text-lg flex items-center justify-center gap-2">
+                <i data-lucide="message-circle" class="w-5 h-5"></i> Interested
+            </a>
+            <button id="modal-close-btn" onclick="closeServiceModal()" class="hidden w-full py-3.5 rounded-xl bg-white border border-brand-purple/20 text-brand-textDark font-bold text-lg hover:bg-brand-light transition-all items-center justify-center gap-2">
+                Close
+            </button>
+        </div>
+    </div>
+
+    <!-- GALLERY LIGHTBOX MODAL -->
+    <div id="gallery-modal" class="fixed inset-0 z-[70] hidden items-center justify-center bg-[rgba(11,18,53,0.95)] backdrop-blur-md p-4 transition-opacity duration-300">
+        <button onclick="closeGalleryModal()" class="absolute top-5 right-5 w-12 h-12 flex items-center justify-center rounded-full bg-white/10 text-white hover:bg-brand-purple transition-colors z-10 shadow-lg border border-white/20">
+            <i data-lucide="x" class="w-6 h-6"></i>
+        </button>
+        <img id="gallery-modal-image" src="" alt="Preview" class="max-w-full max-h-[90vh] object-contain rounded-xl transform scale-95 opacity-0 transition-all duration-300 shadow-[0_0_50px_rgba(123,63,242,0.3)] border border-brand-purple/20" />
+    </div>
+
+    <!-- JAVASCRIPT -->
+    <script>
+        // Ensure DOM is fully loaded before manipulating 
+        document.addEventListener('DOMContentLoaded', () => {
+            
+            // Initialize Icons
+            if (typeof lucide !== 'undefined') {
+                lucide.createIcons();
+            }
+            
+            const yearEl = document.getElementById('year');
+            if(yearEl) yearEl.innerText = new Date().getFullYear();
+
+            // -----------------------
+            // Client Counter Animation
+            // -----------------------
+            const counterElement = document.getElementById('client-count');
+            const statsSection = document.getElementById('stats');
+            let hasCounted = false;
+
+            if (counterElement && statsSection) {
+                const countObserver = new IntersectionObserver((entries) => {
+                    if (entries[0].isIntersecting && !hasCounted) {
+                        hasCounted = true;
+                        let start = 0;
+                        const end = 50000;
+                        const duration = 2000; // 2 seconds
+                        const increment = end / (duration / 16); 
+                        
+                        const timer = setInterval(() => {
+                            start += increment;
+                            if (start >= end) {
+                                clearInterval(timer);
+                                counterElement.innerText = end.toLocaleString();
+                            } else {
+                                counterElement.innerText = Math.floor(start).toLocaleString();
+                            }
+                        }, 16);
+                    }
+                }, { threshold: 0.5 });
+                countObserver.observe(statsSection);
+            }
+
+            // -----------------------
+            // Testimonials Auto-Scroll & Drag Logic
+            // -----------------------
+            const track = document.getElementById('review-track');
+            if (track) {
+                // Clone items for infinite effect
+                const originalItems = [...track.children];
+                originalItems.forEach(item => {
+                    const clone = item.cloneNode(true);
+                    track.appendChild(clone);
+                });
+
+                if (typeof lucide !== 'undefined') {
+                    lucide.createIcons();
+                }
+
+                let isPaused = false;
+                let isDown = false;
+                let startX;
+                let scrollLeft;
+                let animationId;
+
+                function scrollTicker() {
+                    // Only scroll if the element has width (visible)
+                    if (track && track.scrollWidth > 0 && !isPaused && !isDown) {
+                        track.scrollLeft += 1; 
+                        if (track.scrollLeft >= track.scrollWidth / 2) {
+                            track.scrollLeft = 0;
+                        }
+                    }
+                    animationId = requestAnimationFrame(scrollTicker);
+                }
+                scrollTicker();
+
+                track.addEventListener('mouseenter', () => isPaused = true);
+                track.addEventListener('mouseleave', () => {
+                    isPaused = false;
+                    if(!isDown) {
+                        track.classList.remove('cursor-grabbing');
+                        track.classList.add('cursor-grab');
+                    }
+                });
+
+                track.addEventListener('touchstart', () => isPaused = true);
+                track.addEventListener('touchend', () => {
+                    setTimeout(() => { if(!isDown) isPaused = false; }, 1500);
+                });
+
+                track.addEventListener('mousedown', (e) => {
+                    isDown = true;
+                    isPaused = true;
+                    track.classList.add('cursor-grabbing');
+                    track.classList.remove('cursor-grab');
+                    startX = e.pageX - track.offsetLeft;
+                    scrollLeft = track.scrollLeft;
+                });
+                
+                track.addEventListener('mouseup', () => {
+                    isDown = false;
+                    isPaused = false;
+                    track.classList.remove('cursor-grabbing');
+                    track.classList.add('cursor-grab');
+                });
+
+                track.addEventListener('mousemove', (e) => {
+                    if (!isDown) return;
+                    e.preventDefault();
+                    const x = e.pageX - track.offsetLeft;
+                    const walk = (x - startX) * 1.5;
+                    track.scrollLeft = scrollLeft - walk;
+                });
+            }
+
+            // -----------------------
+            // Header & Mobile Menu Logic
+            // -----------------------
+            const header = document.getElementById('header');
+            const mobileBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const menuIcon = document.getElementById('menu-icon');
+
+            if (header) {
+                window.addEventListener('scroll', () => {
+                    if (window.scrollY > 10) {
+                        header.classList.add('shadow-md');
+                        header.classList.remove('shadow-sm');
+                    } else {
+                        header.classList.remove('shadow-md');
+                        header.classList.add('shadow-sm');
+                    }
+                });
+            }
+
+            if (mobileBtn && mobileMenu && menuIcon) {
+                mobileBtn.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    mobileMenu.classList.toggle('flex');
+                    if(mobileMenu.classList.contains('hidden')){
+                        menuIcon.setAttribute('data-lucide', 'menu');
+                    } else {
+                        menuIcon.setAttribute('data-lucide', 'x');
+                    }
+                    if (typeof lucide !== 'undefined') lucide.createIcons();
+                });
+            }
+
+            // -----------------------
+            // Contact Form Logic
+            // -----------------------
+            const contactForm = document.getElementById('contact-form');
+            if (contactForm) {
+                contactForm.addEventListener('submit', (e) => {
+                    e.preventDefault();
+                    const name = document.getElementById('c-name')?.value || '';
+                    const phone = document.getElementById('c-phone')?.value || '';
+                    const message = `New Lead From Website\nName: ${name}\nContact Number: ${phone}\nI want to subscribe for updates.`;
+                    window.open(`https://wa.me/919958031356?text=${encodeURIComponent(message)}`, '_blank');
+                });
+            }
+
+            // -----------------------
+            // KUNDLI GENERATOR LOGIC (MATH ENGINE)
+            // -----------------------
+            const kundliFormEl = document.getElementById('kundli-form');
+            if (kundliFormEl) {
+                // (Constants and logic kept exactly as previous, attached robustly)
+                const RASHIS = ["Aries (Mesha)", "Taurus (Vrishabha)", "Gemini (Mithuna)", "Cancer (Karka)", "Leo (Simha)", "Virgo (Kanya)", "Libra (Tula)", "Scorpio (Vrishchika)", "Sagittarius (Dhanu)", "Capricorn (Makara)", "Aquarius (Kumbha)", "Pisces (Meena)"];
+                const NAKSHATRAS = ["Ashwini", "Bharani", "Krittika", "Rohini", "Mrigashira", "Ardra", "Punarvasu", "Pushya", "Ashlesha", "Magha", "Purva Phalguni", "Uttara Phalguni", "Hasta", "Chitra", "Swati", "Vishakha", "Anuradha", "Jyeshtha", "Mula", "Purva Ashadha", "Uttara Ashadha", "Shravana", "Dhanishta", "Shatabhisha", "Purva Bhadrapada", "Uttara Bhadrapada", "Revati"];
+                const YOGAS = ["Vishkambha", "Priti", "Ayushman", "Saubhagya", "Shobhana", "Atiganda", "Sukarma", "Dhriti", "Shula", "Ganda", "Vriddhi", "Dhruva", "Vyaghata", "Harshana", "Vajra", "Siddhi", "Vyatipata", "Variyan", "Parigha", "Shiva", "Siddha", "Sadhya", "Shubha", "Shukla", "Brahma", "Indra", "Vaidhriti"];
+                const KARANA_MOVING = ["Bava", "Balava", "Kaulava", "Taitila", "Gara", "Vanija", "Vishti"];
+                const VARAS = ["Sunday (Ravivara)", "Monday (Somavara)", "Tuesday (Mangalavara)", "Wednesday (Budhavara)", "Thursday (Guruvara)", "Friday (Shukravara)", "Saturday (Shanivara)"];
+                
+                const CITIES = {
+                    "mumbai": { lat: 19.0760, lon: 72.8777 }, "delhi": { lat: 28.7041, lon: 77.1025 },
+                    "bangalore": { lat: 12.9716, lon: 77.5946 }, "kolkata": { lat: 22.5726, lon: 88.3639 },
+                    "chennai": { lat: 13.0827, lon: 80.2707 }, "hyderabad": { lat: 17.3850, lon: 78.4867 },
+                    "ahmedabad": { lat: 23.0225, lon: 72.5714 }, "pune": { lat: 18.5204, lon: 73.8567 },
+                    "jaipur": { lat: 26.9124, lon: 75.7873 }, "lucknow": { lat: 26.8467, lon: 80.9462 }
+                };
+
+                const fetchCoordinates = async (cityName) => {
+                    const normalized = cityName.split(',')[0].trim().toLowerCase();
+                    if (CITIES[normalized]) return { ...CITIES[normalized], displayName: normalized };
+                    try {
+                        const res = await fetch(`https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(cityName)}`);
+                        const data = await res.json();
+                        if (data && data.length > 0) return { lat: parseFloat(data[0].lat), lon: parseFloat(data[0].lon), displayName: data[0].display_name.split(',')[0] };
+                    } catch (e) { console.error(e); }
+                    return null;
+                };
+
+                const calculateAstrology = (dateStr, timeStr, location) => {
+                    const [year, month, day] = dateStr.split('-').map(Number);
+                    const [hourLocal, minute] = timeStr.split(':').map(Number);
+                    const offsetHours = location.lon / 15;
+                    let hourUTC = hourLocal - offsetHours;
+                    
+                    let y = year; let m = month;
+                    if (m <= 2) { y -= 1; m += 12; }
+                    const A = Math.floor(y / 100);
+                    const B = 2 - A + Math.floor(A / 4);
+                    const JD = Math.floor(365.25 * (y + 4716)) + Math.floor(30.6001 * (m + 1)) + day + B - 1524.5 + ((hourUTC + minute / 60) / 24);
+                    const D = JD - 2451545.0;
+                    const ayanamsa = 23.85 + (year - 2000) * (50.29 / 3600);
+
+                    const gSun = (357.529 + 0.98560028 * D) % 360;
+                    const qSun = (280.459 + 0.98564736 * D) % 360;
+                    let sunTrop = (qSun + 1.915 * Math.sin(gSun * Math.PI / 180) + 0.020 * Math.sin(2 * gSun * Math.PI / 180)) % 360;
+                    if (sunTrop < 0) sunTrop += 360;
+                    let sunSidereal = (sunTrop - ayanamsa + 360) % 360;
+
+                    const L = (218.316 + 13.176396 * D) % 360;
+                    const M = (134.963 + 13.064993 * D) % 360;
+                    let moonTrop = (L + 6.289 * Math.sin(M * Math.PI / 180)) % 360;
+                    if (moonTrop < 0) moonTrop += 360;
+                    let moonSidereal = (moonTrop - ayanamsa + 360) % 360;
+
+                    let marsTrop = (355.4533 + 0.52402073 * D) % 360;
+                    if (marsTrop < 0) marsTrop += 360;
+                    let marsSidereal = (marsTrop - ayanamsa + 360) % 360;
+
+                    let LST = (100.46 + 0.985647 * D + location.lon + 15 * (hourUTC + minute / 60)) % 360;
+                    if (LST < 0) LST += 360;
+                    const LST_rad = LST * Math.PI / 180;
+                    const lat_rad = location.lat * Math.PI / 180;
+                    const e = 23.439 * Math.PI / 180;
+                    const num = Math.cos(LST_rad);
+                    const den = Math.sin(LST_rad) * Math.cos(e) + Math.tan(lat_rad) * Math.sin(e);
+                    let ascTrop = Math.atan2(num, den) * 180 / Math.PI;
+                    if (ascTrop < 0) ascTrop += 360;
+                    let ascSidereal = (ascTrop - ayanamsa + 360) % 360;
+
+                    const varaIndex = Math.floor(JD + 1.5) % 7;
+                    let diffMoonSun = (moonSidereal - sunSidereal + 360) % 360;
+                    const karanaIndex = Math.floor(diffMoonSun / 6);
+                    let karanaName = "";
+                    if (karanaIndex === 0) karanaName = "Kintughna";
+                    else if (karanaIndex >= 57) karanaName = ["Shakuni", "Chatushpada", "Naga"][karanaIndex - 57];
+                    else karanaName = KARANA_MOVING[(karanaIndex - 1) % 7];
+
+                    const yogaIndex = Math.floor((moonSidereal + sunSidereal) / 13.3333) % 27;
+                    const moonNakshatraIndex = Math.floor(moonSidereal / 13.3333);
+                    const moonSignIndex = Math.floor(moonSidereal / 30);
+                    const ascSignIndex = Math.floor(ascSidereal / 30);
+                    const marsSignIndex = Math.floor(marsSidereal / 30);
+                    const marsHouseFromAsc = (marsSignIndex - ascSignIndex + 12) % 12 + 1;
+                    const isMangalik = [1, 4, 7, 8, 12].includes(marsHouseFromAsc);
+
+                    return {
+                        moonRashi: RASHIS[moonSignIndex],
+                        nakshatra: NAKSHATRAS[moonNakshatraIndex],
+                        vara: VARAS[varaIndex],
+                        yoga: YOGAS[yogaIndex],
+                        karana: karanaName,
+                        mangalDosha: isMangalik ? "Yes (Present)" : "No"
+                    };
+                };
+
+                const kundliBtn = document.getElementById('kundli-btn');
+                const kundliResult = document.getElementById('kundli-result');
+                const kundliError = document.getElementById('kundli-error');
+                const kundliErrorText = document.getElementById('kundli-error-text');
+
+                kundliFormEl.addEventListener('submit', async (e) => {
+                    e.preventDefault();
+                    const name = document.getElementById('k-name').value;
+                    const dob = document.getElementById('k-dob').value;
+                    const tob = document.getElementById('k-tob').value;
+                    const place = document.getElementById('k-place').value;
+
+                    kundliBtn.innerHTML = '<div class="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin inline-block align-middle mr-2"></div> Calculating...';
+                    kundliBtn.disabled = true;
+                    if(kundliError) kundliError.classList.add('hidden');
+
+                    try {
+                        const coords = await fetchCoordinates(place);
+                        if (!coords) {
+                            if(kundliErrorText) kundliErrorText.innerText = 'City not found. Please try a major nearby city.';
+                            if(kundliError) kundliError.classList.remove('hidden');
+                            kundliBtn.innerHTML = 'Generate Basic Kundali';
+                            kundliBtn.disabled = false;
+                            return;
+                        }
+
+                        const astro = calculateAstrology(dob, tob, coords);
+
+                        document.getElementById('res-name').innerText = name;
+                        document.getElementById('res-dob').innerText = dob.split('-').reverse().join('-');
+                        document.getElementById('res-tob').innerText = tob;
+                        document.getElementById('res-place').innerText = coords.displayName || place;
+                        document.getElementById('res-rashi').innerText = astro.moonRashi;
+                        document.getElementById('res-nakshatra').innerText = astro.nakshatra;
+                        document.getElementById('res-vara').innerText = astro.vara;
+                        document.getElementById('res-yoga').innerText = astro.yoga;
+                        document.getElementById('res-karana').innerText = astro.karana;
+                        
+                        const doshaEl = document.getElementById('res-dosha');
+                        if (doshaEl) {
+                            doshaEl.innerText = astro.mangalDosha;
+                            if(astro.mangalDosha.includes('Yes')) {
+                                doshaEl.className = "bg-red-50 text-red-600 px-3 py-1 rounded text-xs font-bold inline-block border border-red-200 mt-1";
+                            } else {
+                                doshaEl.className = "bg-green-50 text-green-600 px-3 py-1 rounded text-xs font-bold inline-block border border-green-200 mt-1";
+                            }
+                        }
+
+                        if(kundliResult) kundliResult.classList.remove('hidden');
+                        kundliBtn.innerHTML = 'Generate Basic Kundali';
+                        kundliBtn.disabled = false;
+                        
+                        if(kundliResult) kundliResult.scrollIntoView({behavior: 'smooth', block: 'center'});
+                    } catch (err) {
+                        if(kundliErrorText) kundliErrorText.innerText = 'Something went wrong. Please try again.';
+                        if(kundliError) kundliError.classList.remove('hidden');
+                        kundliBtn.innerHTML = 'Generate Basic Kundali';
+                        kundliBtn.disabled = false;
+                    }
+                });
+            }
+        }); // End DOMContentLoaded
+
+        // -----------------------
+        // View Router Logic (Global Scope)
+        // -----------------------
+        function navigateTo(viewId) {
+            const views = ['view-home', 'view-about', 'view-packages'];
+            views.forEach(id => {
+                const el = document.getElementById(id);
+                if (el) {
+                    if (id === viewId) {
+                        el.classList.remove('hidden');
+                        el.classList.add('block');
+                    } else {
+                        el.classList.add('hidden');
+                        el.classList.remove('block');
+                    }
+                }
+            });
+
+            // Hide mobile menu if open
+            const mobileMenu = document.getElementById('mobile-menu');
+            const menuIcon = document.getElementById('menu-icon');
+            if (mobileMenu && !mobileMenu.classList.contains('hidden')) {
+                mobileMenu.classList.add('hidden');
+                mobileMenu.classList.remove('flex');
+                if (menuIcon) menuIcon.setAttribute('data-lucide', 'menu');
+                if (typeof lucide !== 'undefined') lucide.createIcons();
+            }
+        }
+
+        function navigateToHomeAndScroll(sectionId) {
+            navigateTo('view-home');
+            setTimeout(() => {
+                const targetEl = document.getElementById(sectionId);
+                if (targetEl) {
+                    // Accounting for the sticky header offset
+                    const yOffset = -80; 
+                    const y = targetEl.getBoundingClientRect().top + window.scrollY + yOffset;
+                    window.scrollTo({top: y, behavior: 'smooth'});
+                }
+            }, 50); // slight delay to allow display:block to calculate heights
+        }
+
+        // -----------------------
+        // Service & Badge Modal Logic (Global Scope)
+        // -----------------------
+        function openServiceModal(title, desc) {
+            const modalTitle = document.getElementById('modal-title');
+            const modalDesc = document.getElementById('modal-desc');
+            const modalWhatsappBtn = document.getElementById('modal-whatsapp-btn');
+            const modalCloseBtn = document.getElementById('modal-close-btn');
+
+            if(modalTitle) modalTitle.innerText = title;
+            if(modalDesc) modalDesc.innerText = desc;
+            
+            if(modalWhatsappBtn) {
+                const msg = `Hey Dr. Ruchika Gupta, I visited on your website, I am interested in ${title}.`;
+                modalWhatsappBtn.href = `https://wa.me/919958031356?text=${encodeURIComponent(msg)}`;
+                modalWhatsappBtn.classList.remove('hidden');
+                modalWhatsappBtn.classList.add('flex');
+            }
+            if(modalCloseBtn) {
+                modalCloseBtn.classList.add('hidden');
+                modalCloseBtn.classList.remove('flex');
+            }
+            
+            showModal();
+        }
+
+        function openBadgeModal(title, desc) {
+            const modalTitle = document.getElementById('modal-title');
+            const modalDesc = document.getElementById('modal-desc');
+            const modalWhatsappBtn = document.getElementById('modal-whatsapp-btn');
+            const modalCloseBtn = document.getElementById('modal-close-btn');
+
+            if(modalTitle) modalTitle.innerText = title;
+            if(modalDesc) modalDesc.innerText = desc;
+            
+            if(modalWhatsappBtn) {
+                modalWhatsappBtn.classList.add('hidden');
+                modalWhatsappBtn.classList.remove('flex');
+            }
+            if(modalCloseBtn) {
+                modalCloseBtn.classList.remove('hidden');
+                modalCloseBtn.classList.add('flex');
+            }
+            
+            showModal();
+        }
+
+        function showModal() {
+            const serviceModal = document.getElementById('service-modal');
+            const serviceModalContent = document.getElementById('service-modal-content');
+            if(serviceModal) {
+                serviceModal.classList.remove('modal-inactive');
+                serviceModal.classList.add('modal-active');
+            }
+            if(serviceModalContent) {
+                serviceModalContent.classList.add('modal-content-active');
+            }
+        }
+
+        function closeServiceModal() {
+            const serviceModal = document.getElementById('service-modal');
+            const serviceModalContent = document.getElementById('service-modal-content');
+            if(serviceModal) {
+                serviceModal.classList.remove('modal-active');
+                serviceModal.classList.add('modal-inactive');
+            }
+            if(serviceModalContent) {
+                serviceModalContent.classList.remove('modal-content-active');
+            }
+        }
+
+        const serviceModal = document.getElementById('service-modal');
+        if (serviceModal) {
+            serviceModal.addEventListener('click', (e) => {
+                if (e.target === serviceModal) {
+                    closeServiceModal();
+                }
+            });
+        }
+
+        // -----------------------
+        // Gallery Lightbox Logic (Global Scope)
+        // -----------------------
+        function openGalleryModal(src) {
+            const galleryModal = document.getElementById('gallery-modal');
+            const galleryImage = document.getElementById('gallery-modal-image');
+            if (galleryImage && galleryModal) {
+                galleryImage.src = src;
+                galleryModal.classList.remove('hidden');
+                galleryModal.classList.add('flex');
+                setTimeout(() => {
+                    galleryImage.classList.remove('scale-95', 'opacity-0');
+                    galleryImage.classList.add('scale-100', 'opacity-100');
+                }, 10);
+            }
+        }
+
+        function closeGalleryModal() {
+            const galleryModal = document.getElementById('gallery-modal');
+            const galleryImage = document.getElementById('gallery-modal-image');
+            if (galleryImage && galleryModal) {
+                galleryImage.classList.remove('scale-100', 'opacity-100');
+                galleryImage.classList.add('scale-95', 'opacity-0');
+                setTimeout(() => {
+                    galleryModal.classList.remove('flex');
+                    galleryModal.classList.add('hidden');
+                    galleryImage.src = ""; 
+                }, 300);
+            }
+        }
+
+        const galleryModal = document.getElementById('gallery-modal');
+        if(galleryModal) {
+            galleryModal.addEventListener('click', (e) => {
+                if(e.target === galleryModal) {
+                    closeGalleryModal();
+                }
+            });
+        }
+    </script>
+</body>
+</html>
+
+
+
             transition: all 0.3s ease;
             border: none;
         }
